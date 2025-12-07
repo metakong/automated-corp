@@ -1,0 +1,2685 @@
+[
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "iamcredentials.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/iamcredentials.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "storage-api.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/storage-api.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "drive.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/drive.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "iam.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/iam.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "cloudfunctions.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/cloudfunctions.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "appoptimize.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/appoptimize.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "eventarc.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/eventarc.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "logging.googleapis.com/RecentQuery",
+    "displayName": "4399756460341850841",
+    "location": "global",
+    "name": "//logging.googleapis.com/projects/813376341042/locations/global/recentQueries/4399756460341850841",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "recommender.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/recommender.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "additionalAttributes": {
+      "statusImageDigest": "us-central1-docker.pkg.dev/veiled-vector-core/cloud-run-source-deploy/corp-dashboard@sha256:a8bfdcac4c39190b72b85090f37e9917b20db7dd6077d108c3c434c688b655aa"
+    },
+    "assetType": "run.googleapis.com/Revision",
+    "createTime": "2025-12-07T15:52:37Z",
+    "displayName": "corp-dashboard-00002-ts7",
+    "labels": {
+      "client.knative.dev/nonce": "ruyxxbvnif",
+      "cloud.googleapis.com/location": "us-central1",
+      "run.googleapis.com/startupProbeType": "Default",
+      "serving.knative.dev/configuration": "corp-dashboard",
+      "serving.knative.dev/configurationGeneration": "2",
+      "serving.knative.dev/route": "corp-dashboard",
+      "serving.knative.dev/service": "corp-dashboard",
+      "serving.knative.dev/serviceUid": "71319219-830c-4ff8-ab78-5f97ad23b05d"
+    },
+    "location": "us-central1",
+    "name": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/revisions/corp-dashboard-00002-ts7",
+    "parentAssetType": "run.googleapis.com/Service",
+    "parentFullResourceName": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/services/corp-dashboard",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "artifactregistry.googleapis.com/DockerImage",
+    "displayName": "projects/veiled-vector-core/locations/us-central1/repositories/cloud-run-source-deploy/dockerImages/corp-dashboard@sha256:64b4ca9254885887f8c96a6a860881df8d2a499295215fbdf6024ca88f76214b",
+    "location": "us-central1",
+    "name": "//artifactregistry.googleapis.com/projects/veiled-vector-core/locations/us-central1/repositories/cloud-run-source-deploy/dockerImages/corp-dashboard@sha256:64b4ca9254885887f8c96a6a860881df8d2a499295215fbdf6024ca88f76214b",
+    "parentAssetType": "artifactregistry.googleapis.com/Repository",
+    "parentFullResourceName": "//artifactregistry.googleapis.com/projects/veiled-vector-core/locations/us-central1/repositories/cloud-run-source-deploy",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "artifactregistry.googleapis.com/DockerImage",
+    "displayName": "projects/veiled-vector-core/locations/us-central1/repositories/cloud-run-source-deploy/dockerImages/corp-dashboard@sha256:a8bfdcac4c39190b72b85090f37e9917b20db7dd6077d108c3c434c688b655aa",
+    "location": "us-central1",
+    "name": "//artifactregistry.googleapis.com/projects/veiled-vector-core/locations/us-central1/repositories/cloud-run-source-deploy/dockerImages/corp-dashboard@sha256:a8bfdcac4c39190b72b85090f37e9917b20db7dd6077d108c3c434c688b655aa",
+    "parentAssetType": "artifactregistry.googleapis.com/Repository",
+    "parentFullResourceName": "//artifactregistry.googleapis.com/projects/veiled-vector-core/locations/us-central1/repositories/cloud-run-source-deploy",
+    "project": "projects/813376341042"
+  },
+  {
+    "additionalAttributes": {
+      "statusImageDigest": "us-central1-docker.pkg.dev/veiled-vector-core/gcf-artifacts/veiled--vector--core__us--central1__morning--briefing@sha256:aca86726b28595c7c7b4c7bde630e1d9009e5794be11b04fb92b40f9ad3ec6e8"
+    },
+    "assetType": "run.googleapis.com/Revision",
+    "createTime": "2025-12-07T15:14:54Z",
+    "displayName": "morning-briefing-00004-zam",
+    "labels": {
+      "cloud.googleapis.com/location": "us-central1",
+      "goog-cloudfunctions-runtime": "python311",
+      "goog-drz-cloudfunctions-id": "morning-briefing",
+      "goog-drz-cloudfunctions-location": "us-central1",
+      "goog-managed-by": "cloudfunctions",
+      "run.googleapis.com/startupProbeType": "Default",
+      "serving.knative.dev/configuration": "morning-briefing",
+      "serving.knative.dev/configurationGeneration": "4",
+      "serving.knative.dev/route": "morning-briefing",
+      "serving.knative.dev/service": "morning-briefing",
+      "serving.knative.dev/serviceUid": "545ab2bb-99c0-4f6d-9247-eb60c6468965"
+    },
+    "location": "us-central1",
+    "name": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/revisions/morning-briefing-00004-zam",
+    "parentAssetType": "run.googleapis.com/Service",
+    "parentFullResourceName": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/services/morning-briefing",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "artifactregistry.googleapis.com/DockerImage",
+    "displayName": "projects/veiled-vector-core/locations/us-central1/repositories/gcf-artifacts/dockerImages/veiled--vector--core__us--central1__morning--briefing@sha256:6339fc76861810414afe25274b4613066e46e135b5f0664288c6fca965790062",
+    "location": "us-central1",
+    "name": "//artifactregistry.googleapis.com/projects/veiled-vector-core/locations/us-central1/repositories/gcf-artifacts/dockerImages/veiled--vector--core__us--central1__morning--briefing@sha256:6339fc76861810414afe25274b4613066e46e135b5f0664288c6fca965790062",
+    "parentAssetType": "artifactregistry.googleapis.com/Repository",
+    "parentFullResourceName": "//artifactregistry.googleapis.com/projects/veiled-vector-core/locations/us-central1/repositories/gcf-artifacts",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "artifactregistry.googleapis.com/DockerImage",
+    "displayName": "projects/veiled-vector-core/locations/us-central1/repositories/gcf-artifacts/dockerImages/veiled--vector--core__us--central1__morning--briefing@sha256:aca86726b28595c7c7b4c7bde630e1d9009e5794be11b04fb92b40f9ad3ec6e8",
+    "location": "us-central1",
+    "name": "//artifactregistry.googleapis.com/projects/veiled-vector-core/locations/us-central1/repositories/gcf-artifacts/dockerImages/veiled--vector--core__us--central1__morning--briefing@sha256:aca86726b28595c7c7b4c7bde630e1d9009e5794be11b04fb92b40f9ad3ec6e8",
+    "parentAssetType": "artifactregistry.googleapis.com/Repository",
+    "parentFullResourceName": "//artifactregistry.googleapis.com/projects/veiled-vector-core/locations/us-central1/repositories/gcf-artifacts",
+    "project": "projects/813376341042"
+  },
+  {
+    "additionalAttributes": {
+      "statusImageDigest": "us-central1-docker.pkg.dev/veiled-vector-core/gcf-artifacts/veiled--vector--core__us--central1__morning--briefing@sha256:6339fc76861810414afe25274b4613066e46e135b5f0664288c6fca965790062"
+    },
+    "assetType": "run.googleapis.com/Revision",
+    "createTime": "2025-12-07T15:11:31Z",
+    "displayName": "morning-briefing-00003-suh",
+    "labels": {
+      "cloud.googleapis.com/location": "us-central1",
+      "goog-cloudfunctions-runtime": "python311",
+      "goog-drz-cloudfunctions-id": "morning-briefing",
+      "goog-drz-cloudfunctions-location": "us-central1",
+      "goog-managed-by": "cloudfunctions",
+      "run.googleapis.com/startupProbeType": "Default",
+      "serving.knative.dev/configuration": "morning-briefing",
+      "serving.knative.dev/configurationGeneration": "3",
+      "serving.knative.dev/route": "morning-briefing",
+      "serving.knative.dev/service": "morning-briefing",
+      "serving.knative.dev/serviceUid": "545ab2bb-99c0-4f6d-9247-eb60c6468965"
+    },
+    "location": "us-central1",
+    "name": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/revisions/morning-briefing-00003-suh",
+    "parentAssetType": "run.googleapis.com/Service",
+    "parentFullResourceName": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/services/morning-briefing",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "artifactregistry.googleapis.com/DockerImage",
+    "displayName": "projects/veiled-vector-core/locations/us-central1/repositories/gcf-artifacts/dockerImages/veiled--vector--core__us--central1__morning--briefing%2Fcache@sha256:938b9241dd8f0e76a07729357d755edaa42dd5823c52e48e37cfef2fcb4fed40",
+    "location": "us-central1",
+    "name": "//artifactregistry.googleapis.com/projects/veiled-vector-core/locations/us-central1/repositories/gcf-artifacts/dockerImages/veiled--vector--core__us--central1__morning--briefing%2Fcache@sha256:938b9241dd8f0e76a07729357d755edaa42dd5823c52e48e37cfef2fcb4fed40",
+    "parentAssetType": "artifactregistry.googleapis.com/Repository",
+    "parentFullResourceName": "//artifactregistry.googleapis.com/projects/veiled-vector-core/locations/us-central1/repositories/gcf-artifacts",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "artifactregistry.googleapis.com/DockerImage",
+    "displayName": "projects/veiled-vector-core/locations/us-central1/repositories/gcf-artifacts/dockerImages/veiled--vector--core__us--central1__morning--briefing@sha256:3f945e9be781edb4f58614b3963647aac17283b2b0f0dc0dc0b71d9f8ed4ad06",
+    "location": "us-central1",
+    "name": "//artifactregistry.googleapis.com/projects/veiled-vector-core/locations/us-central1/repositories/gcf-artifacts/dockerImages/veiled--vector--core__us--central1__morning--briefing@sha256:3f945e9be781edb4f58614b3963647aac17283b2b0f0dc0dc0b71d9f8ed4ad06",
+    "parentAssetType": "artifactregistry.googleapis.com/Repository",
+    "parentFullResourceName": "//artifactregistry.googleapis.com/projects/veiled-vector-core/locations/us-central1/repositories/gcf-artifacts",
+    "project": "projects/813376341042"
+  },
+  {
+    "additionalAttributes": {
+      "statusImageDigest": "us-central1-docker.pkg.dev/veiled-vector-core/gcf-artifacts/veiled--vector--core__us--central1__morning--briefing@sha256:3f945e9be781edb4f58614b3963647aac17283b2b0f0dc0dc0b71d9f8ed4ad06"
+    },
+    "assetType": "run.googleapis.com/Revision",
+    "createTime": "2025-12-07T15:09:33Z",
+    "displayName": "morning-briefing-00002-dos",
+    "labels": {
+      "cloud.googleapis.com/location": "us-central1",
+      "goog-cloudfunctions-runtime": "python311",
+      "goog-drz-cloudfunctions-id": "morning-briefing",
+      "goog-drz-cloudfunctions-location": "us-central1",
+      "goog-managed-by": "cloudfunctions",
+      "run.googleapis.com/startupProbeType": "Default",
+      "serving.knative.dev/configuration": "morning-briefing",
+      "serving.knative.dev/configurationGeneration": "2",
+      "serving.knative.dev/route": "morning-briefing",
+      "serving.knative.dev/service": "morning-briefing",
+      "serving.knative.dev/serviceUid": "545ab2bb-99c0-4f6d-9247-eb60c6468965"
+    },
+    "location": "us-central1",
+    "name": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/revisions/morning-briefing-00002-dos",
+    "parentAssetType": "run.googleapis.com/Service",
+    "parentFullResourceName": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/services/morning-briefing",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "artifactregistry.googleapis.com/DockerImage",
+    "displayName": "projects/veiled-vector-core/locations/us-central1/repositories/gcf-artifacts/dockerImages/veiled--vector--core__us--central1__morning--briefing@sha256:cc909b2bdf08eb91e11bd417f4f08399ef3233da171f4cbb48c40e0c0c745e9a",
+    "location": "us-central1",
+    "name": "//artifactregistry.googleapis.com/projects/veiled-vector-core/locations/us-central1/repositories/gcf-artifacts/dockerImages/veiled--vector--core__us--central1__morning--briefing@sha256:cc909b2bdf08eb91e11bd417f4f08399ef3233da171f4cbb48c40e0c0c745e9a",
+    "parentAssetType": "artifactregistry.googleapis.com/Repository",
+    "parentFullResourceName": "//artifactregistry.googleapis.com/projects/veiled-vector-core/locations/us-central1/repositories/gcf-artifacts",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "pubsub.googleapis.com/Subscription",
+    "displayName": "projects/veiled-vector-core/subscriptions/corp-results-sub",
+    "location": "global",
+    "name": "//pubsub.googleapis.com/projects/veiled-vector-core/subscriptions/corp-results-sub",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "pubsub.googleapis.com/Topic",
+    "displayName": "projects/veiled-vector-core/topics/corp-task-results",
+    "location": "global",
+    "name": "//pubsub.googleapis.com/projects/veiled-vector-core/topics/corp-task-results",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042"
+  },
+  {
+    "additionalAttributes": {
+      "statusImageDigest": "us-central1-docker.pkg.dev/veiled-vector-core/gcf-artifacts/veiled--vector--core__us--central1__morning--briefing@sha256:cc909b2bdf08eb91e11bd417f4f08399ef3233da171f4cbb48c40e0c0c745e9a"
+    },
+    "assetType": "run.googleapis.com/Revision",
+    "createTime": "2025-12-07T07:55:37Z",
+    "displayName": "morning-briefing-00001-yit",
+    "labels": {
+      "cloud.googleapis.com/location": "us-central1",
+      "goog-cloudfunctions-runtime": "python311",
+      "goog-managed-by": "cloudfunctions",
+      "run.googleapis.com/startupProbeType": "Default",
+      "serving.knative.dev/configuration": "morning-briefing",
+      "serving.knative.dev/configurationGeneration": "1",
+      "serving.knative.dev/service": "morning-briefing",
+      "serving.knative.dev/serviceUid": "545ab2bb-99c0-4f6d-9247-eb60c6468965"
+    },
+    "location": "us-central1",
+    "name": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/revisions/morning-briefing-00001-yit",
+    "parentAssetType": "run.googleapis.com/Service",
+    "parentFullResourceName": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/services/morning-briefing",
+    "project": "projects/813376341042"
+  },
+  {
+    "additionalAttributes": {
+      "statusUrl": "https://morning-briefing-kzld2m5qwa-uc.a.run.app"
+    },
+    "assetType": "run.googleapis.com/Service",
+    "createTime": "2025-12-07T07:55:37Z",
+    "displayName": "morning-briefing",
+    "labels": {
+      "cloud.googleapis.com/location": "us-central1",
+      "goog-cloudfunctions-runtime": "python311",
+      "goog-drz-cloudfunctions-id": "morning-briefing",
+      "goog-drz-cloudfunctions-location": "us-central1",
+      "goog-managed-by": "cloudfunctions"
+    },
+    "location": "us-central1",
+    "name": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/services/morning-briefing",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "artifactregistry.googleapis.com/Repository",
+    "createTime": "2025-12-07T07:54:48Z",
+    "description": "This repository is created and used by Cloud Functions for storing function docker images.",
+    "displayName": "projects/veiled-vector-core/locations/us-central1/repositories/gcf-artifacts",
+    "labels": {
+      "goog-managed-by": "cloudfunctions"
+    },
+    "location": "us-central1",
+    "name": "//artifactregistry.googleapis.com/projects/veiled-vector-core/locations/us-central1/repositories/gcf-artifacts",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "updateTime": "2025-12-07T07:54:48Z"
+  },
+  {
+    "additionalAttributes": {
+      "statusImageDigest": "us-central1-docker.pkg.dev/veiled-vector-core/cloud-run-source-deploy/corp-dashboard@sha256:64b4ca9254885887f8c96a6a860881df8d2a499295215fbdf6024ca88f76214b"
+    },
+    "assetType": "run.googleapis.com/Revision",
+    "createTime": "2025-12-07T07:54:16Z",
+    "displayName": "corp-dashboard-00001-hs4",
+    "labels": {
+      "client.knative.dev/nonce": "qmdicrwezj",
+      "cloud.googleapis.com/location": "us-central1",
+      "run.googleapis.com/startupProbeType": "Default",
+      "serving.knative.dev/configuration": "corp-dashboard",
+      "serving.knative.dev/configurationGeneration": "1",
+      "serving.knative.dev/service": "corp-dashboard",
+      "serving.knative.dev/serviceUid": "71319219-830c-4ff8-ab78-5f97ad23b05d"
+    },
+    "location": "us-central1",
+    "name": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/revisions/corp-dashboard-00001-hs4",
+    "parentAssetType": "run.googleapis.com/Service",
+    "parentFullResourceName": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/services/corp-dashboard",
+    "project": "projects/813376341042"
+  },
+  {
+    "additionalAttributes": {
+      "statusUrl": "https://corp-dashboard-kzld2m5qwa-uc.a.run.app"
+    },
+    "assetType": "run.googleapis.com/Service",
+    "createTime": "2025-12-07T07:54:15Z",
+    "displayName": "corp-dashboard",
+    "labels": {
+      "cloud.googleapis.com/location": "us-central1"
+    },
+    "location": "us-central1",
+    "name": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/services/corp-dashboard",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "storage.googleapis.com/Bucket",
+    "createTime": "2025-12-07T07:53:33Z",
+    "displayName": "gcf-v2-sources-813376341042-us-central1",
+    "labels": {
+      "goog-managed-by": "cloudfunctions"
+    },
+    "location": "us-central1",
+    "name": "//storage.googleapis.com/gcf-v2-sources-813376341042-us-central1",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "updateTime": "2025-12-07T07:53:33Z"
+  },
+  {
+    "assetType": "storage.googleapis.com/Bucket",
+    "createTime": "2025-12-07T07:53:29Z",
+    "displayName": "gcf-v2-uploads-813376341042.us-central1.cloudfunctions.appspot.com",
+    "labels": {
+      "goog-managed-by": "cloudfunctions"
+    },
+    "location": "us-central1",
+    "name": "//storage.googleapis.com/gcf-v2-uploads-813376341042.us-central1.cloudfunctions.appspot.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "updateTime": "2025-12-07T07:53:29Z"
+  },
+  {
+    "additionalAttributes": {
+      "email": "veiled-vector-core@appspot.gserviceaccount.com",
+      "uniqueId": "115323304461836341020"
+    },
+    "assetType": "iam.googleapis.com/ServiceAccount",
+    "displayName": "App Engine default service account",
+    "location": "global",
+    "name": "//iam.googleapis.com/projects/veiled-vector-core/serviceAccounts/veiled-vector-core@appspot.gserviceaccount.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "pubsub.googleapis.com/Subscription",
+    "displayName": "projects/veiled-vector-core/subscriptions/akuma-ingest-sub",
+    "location": "global",
+    "name": "//pubsub.googleapis.com/projects/veiled-vector-core/subscriptions/akuma-ingest-sub",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "pubsub.googleapis.com/Topic",
+    "displayName": "projects/veiled-vector-core/topics/corp-task-dispatch",
+    "location": "global",
+    "name": "//pubsub.googleapis.com/projects/veiled-vector-core/topics/corp-task-dispatch",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042"
+  },
+  {
+    "additionalAttributes": {
+      "statusUrl": "https://verify-pipeline-kzld2m5qwa-uc.a.run.app"
+    },
+    "assetType": "run.googleapis.com/Service",
+    "createTime": "2025-12-07T07:38:44Z",
+    "displayName": "verify-pipeline",
+    "labels": {
+      "cloud.googleapis.com/location": "us-central1"
+    },
+    "location": "us-central1",
+    "name": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/services/verify-pipeline",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042"
+  },
+  {
+    "additionalAttributes": {
+      "statusImageDigest": "us-central1-docker.pkg.dev/veiled-vector-core/cloud-run-source-deploy/verify-pipeline@sha256:96c32c2eb5faec8b516d34979003c19a8a543b86d96575dc80e773820306ea1e"
+    },
+    "assetType": "run.googleapis.com/Revision",
+    "createTime": "2025-12-07T07:38:44Z",
+    "displayName": "verify-pipeline-00001-r8x",
+    "labels": {
+      "client.knative.dev/nonce": "lusbukqppq",
+      "cloud.googleapis.com/location": "us-central1",
+      "run.googleapis.com/startupProbeType": "Default",
+      "serving.knative.dev/configuration": "verify-pipeline",
+      "serving.knative.dev/configurationGeneration": "1",
+      "serving.knative.dev/route": "verify-pipeline",
+      "serving.knative.dev/service": "verify-pipeline",
+      "serving.knative.dev/serviceUid": "abef7c96-4435-4d85-b061-0d8b4923251a"
+    },
+    "location": "us-central1",
+    "name": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/revisions/verify-pipeline-00001-r8x",
+    "parentAssetType": "run.googleapis.com/Service",
+    "parentFullResourceName": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/services/verify-pipeline",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "artifactregistry.googleapis.com/DockerImage",
+    "displayName": "projects/veiled-vector-core/locations/us-central1/repositories/cloud-run-source-deploy/dockerImages/verify-pipeline@sha256:96c32c2eb5faec8b516d34979003c19a8a543b86d96575dc80e773820306ea1e",
+    "location": "us-central1",
+    "name": "//artifactregistry.googleapis.com/projects/veiled-vector-core/locations/us-central1/repositories/cloud-run-source-deploy/dockerImages/verify-pipeline@sha256:96c32c2eb5faec8b516d34979003c19a8a543b86d96575dc80e773820306ea1e",
+    "parentAssetType": "artifactregistry.googleapis.com/Repository",
+    "parentFullResourceName": "//artifactregistry.googleapis.com/projects/veiled-vector-core/locations/us-central1/repositories/cloud-run-source-deploy",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "storage.googleapis.com/Bucket",
+    "createTime": "2025-12-07T07:38:17Z",
+    "displayName": "run-sources-veiled-vector-core-us-central1",
+    "location": "us-central1",
+    "name": "//storage.googleapis.com/run-sources-veiled-vector-core-us-central1",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "updateTime": "2025-12-07T07:38:17Z"
+  },
+  {
+    "assetType": "artifactregistry.googleapis.com/Repository",
+    "createTime": "2025-12-07T07:38:15Z",
+    "description": "Cloud Run Source Deployments",
+    "displayName": "projects/veiled-vector-core/locations/us-central1/repositories/cloud-run-source-deploy",
+    "location": "us-central1",
+    "name": "//artifactregistry.googleapis.com/projects/veiled-vector-core/locations/us-central1/repositories/cloud-run-source-deploy",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "updateTime": "2025-12-07T07:38:15Z"
+  },
+  {
+    "assetType": "secretmanager.googleapis.com/SecretVersion",
+    "createTime": "2025-12-07T07:37:51Z",
+    "displayName": "projects/813376341042/secrets/akuma-hello-secret/versions/1",
+    "location": "global",
+    "name": "//secretmanager.googleapis.com/projects/813376341042/secrets/akuma-hello-secret/versions/1",
+    "parentAssetType": "secretmanager.googleapis.com/Secret",
+    "parentFullResourceName": "//secretmanager.googleapis.com/projects/813376341042/secrets/akuma-hello-secret",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "secretmanager.googleapis.com/Secret",
+    "createTime": "2025-12-07T07:37:50Z",
+    "displayName": "projects/813376341042/secrets/akuma-hello-secret",
+    "location": "global",
+    "name": "//secretmanager.googleapis.com/projects/813376341042/secrets/akuma-hello-secret",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "dataplex.googleapis.com/EntryGroup",
+    "createTime": "2025-12-05T10:32:30Z",
+    "displayName": "@bigquery",
+    "location": "us",
+    "name": "//dataplex.googleapis.com/projects/veiled-vector-core/locations/us/entryGroups/@bigquery",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "updateTime": "2025-12-05T10:32:33Z"
+  },
+  {
+    "assetType": "dataplex.googleapis.com/EntryGroup",
+    "createTime": "2025-12-02T02:05:04Z",
+    "displayName": "@bigquery",
+    "location": "global",
+    "name": "//dataplex.googleapis.com/projects/veiled-vector-core/locations/global/entryGroups/@bigquery",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "updateTime": "2025-12-02T02:05:08Z"
+  },
+  {
+    "assetType": "dataplex.googleapis.com/EntryGroup",
+    "createTime": "2025-12-02T02:03:56Z",
+    "displayName": "@spanner",
+    "location": "global",
+    "name": "//dataplex.googleapis.com/projects/veiled-vector-core/locations/global/entryGroups/@spanner",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "updateTime": "2025-12-02T02:03:59Z"
+  },
+  {
+    "assetType": "dataplex.googleapis.com/EntryGroup",
+    "createTime": "2025-12-02T02:01:08Z",
+    "displayName": "@dataprocmetastore",
+    "location": "global",
+    "name": "//dataplex.googleapis.com/projects/veiled-vector-core/locations/global/entryGroups/@dataprocmetastore",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "updateTime": "2025-12-02T02:01:13Z"
+  },
+  {
+    "assetType": "dataplex.googleapis.com/EntryGroup",
+    "createTime": "2025-12-02T01:59:09Z",
+    "displayName": "@bigtable",
+    "location": "global",
+    "name": "//dataplex.googleapis.com/projects/veiled-vector-core/locations/global/entryGroups/@bigtable",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "updateTime": "2025-12-02T01:59:13Z"
+  },
+  {
+    "assetType": "dataplex.googleapis.com/EntryGroup",
+    "createTime": "2025-12-02T01:50:19Z",
+    "displayName": "@analyticshub",
+    "location": "global",
+    "name": "//dataplex.googleapis.com/projects/veiled-vector-core/locations/global/entryGroups/@analyticshub",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "updateTime": "2025-12-02T01:50:23Z"
+  },
+  {
+    "assetType": "dataplex.googleapis.com/EntryGroup",
+    "createTime": "2025-12-02T01:35:57Z",
+    "displayName": "@vertexai",
+    "location": "global",
+    "name": "//dataplex.googleapis.com/projects/veiled-vector-core/locations/global/entryGroups/@vertexai",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "updateTime": "2025-12-02T01:36:01Z"
+  },
+  {
+    "assetType": "dataplex.googleapis.com/EntryGroup",
+    "createTime": "2025-12-02T01:35:56Z",
+    "displayName": "@pubsub",
+    "location": "global",
+    "name": "//dataplex.googleapis.com/projects/veiled-vector-core/locations/global/entryGroups/@pubsub",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "updateTime": "2025-12-02T01:36:01Z"
+  },
+  {
+    "assetType": "dataplex.googleapis.com/EntryGroup",
+    "createTime": "2025-12-02T01:24:44Z",
+    "displayName": "@storage",
+    "location": "global",
+    "name": "//dataplex.googleapis.com/projects/veiled-vector-core/locations/global/entryGroups/@storage",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "updateTime": "2025-12-02T01:24:47Z"
+  },
+  {
+    "assetType": "cloudbilling.googleapis.com/ProjectBillingInfo",
+    "displayName": "projects/veiled-vector-core/billingInfo",
+    "location": "global",
+    "name": "//cloudbilling.googleapis.com/projects/veiled-vector-core/billingInfo",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ACTIVE"
+  },
+  {
+    "assetType": "bigquery.googleapis.com/Dataset",
+    "createTime": "2025-12-01T21:12:39Z",
+    "displayName": "veiled_vector_data",
+    "location": "US",
+    "name": "//bigquery.googleapis.com/projects/veiled-vector-core/datasets/veiled_vector_data",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "updateTime": "2025-12-01T21:12:39Z"
+  },
+  {
+    "assetType": "pubsub.googleapis.com/Subscription",
+    "displayName": "projects/veiled-vector-core/subscriptions/raw-data-debug",
+    "location": "global",
+    "name": "//pubsub.googleapis.com/projects/veiled-vector-core/subscriptions/raw-data-debug",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "pubsub.googleapis.com/Topic",
+    "displayName": "projects/veiled-vector-core/topics/raw-data-events",
+    "location": "global",
+    "name": "//pubsub.googleapis.com/projects/veiled-vector-core/topics/raw-data-events",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042"
+  },
+  {
+    "additionalAttributes": {
+      "statusImageDigest": "us-central1-docker.pkg.dev/veiled-vector-core/veiled-vector-repo/dashboard@sha256:aa72ce580ebda4145497f9e733748b82eb3efe04a6d1e307d331a024d954aee5"
+    },
+    "assetType": "run.googleapis.com/Revision",
+    "createTime": "2025-12-01T18:46:31Z",
+    "displayName": "veiled-vector-dashboard-00005-h9g",
+    "labels": {
+      "client.knative.dev/nonce": "ctenewttmw",
+      "cloud.googleapis.com/location": "us-central1",
+      "run.googleapis.com/startupProbeType": "Default",
+      "serving.knative.dev/configuration": "veiled-vector-dashboard",
+      "serving.knative.dev/configurationGeneration": "5",
+      "serving.knative.dev/route": "veiled-vector-dashboard",
+      "serving.knative.dev/service": "veiled-vector-dashboard",
+      "serving.knative.dev/serviceUid": "21a49d57-b313-4ead-8c95-677c81e0746f"
+    },
+    "location": "us-central1",
+    "name": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/revisions/veiled-vector-dashboard-00005-h9g",
+    "parentAssetType": "run.googleapis.com/Service",
+    "parentFullResourceName": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/services/veiled-vector-dashboard",
+    "project": "projects/813376341042"
+  },
+  {
+    "additionalAttributes": {
+      "statusImageDigest": "us-central1-docker.pkg.dev/veiled-vector-core/veiled-vector-repo/dashboard@sha256:aa72ce580ebda4145497f9e733748b82eb3efe04a6d1e307d331a024d954aee5"
+    },
+    "assetType": "run.googleapis.com/Revision",
+    "createTime": "2025-12-01T18:24:24Z",
+    "displayName": "veiled-vector-dashboard-00004-42p",
+    "labels": {
+      "client.knative.dev/nonce": "eftybkwceo",
+      "cloud.googleapis.com/location": "us-central1",
+      "run.googleapis.com/startupProbeType": "Default",
+      "serving.knative.dev/configuration": "veiled-vector-dashboard",
+      "serving.knative.dev/configurationGeneration": "4",
+      "serving.knative.dev/service": "veiled-vector-dashboard",
+      "serving.knative.dev/serviceUid": "21a49d57-b313-4ead-8c95-677c81e0746f"
+    },
+    "location": "us-central1",
+    "name": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/revisions/veiled-vector-dashboard-00004-42p",
+    "parentAssetType": "run.googleapis.com/Service",
+    "parentFullResourceName": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/services/veiled-vector-dashboard",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "artifactregistry.googleapis.com/DockerImage",
+    "displayName": "projects/veiled-vector-core/locations/us-central1/repositories/veiled-vector-repo/dockerImages/dashboard@sha256:aa72ce580ebda4145497f9e733748b82eb3efe04a6d1e307d331a024d954aee5",
+    "location": "us-central1",
+    "name": "//artifactregistry.googleapis.com/projects/veiled-vector-core/locations/us-central1/repositories/veiled-vector-repo/dockerImages/dashboard@sha256:aa72ce580ebda4145497f9e733748b82eb3efe04a6d1e307d331a024d954aee5",
+    "parentAssetType": "artifactregistry.googleapis.com/Repository",
+    "parentFullResourceName": "//artifactregistry.googleapis.com/projects/veiled-vector-core/locations/us-central1/repositories/veiled-vector-repo",
+    "project": "projects/813376341042"
+  },
+  {
+    "additionalAttributes": {
+      "statusImageDigest": "gcr.io/veiled-vector-core/veiled-vector-dashboard@sha256:78fad8ad8d8d5f4f5be090fbcb0efd705ff2ff3c5c7ebf150e4592261ddf9f6a"
+    },
+    "assetType": "run.googleapis.com/Revision",
+    "createTime": "2025-12-01T18:00:10Z",
+    "displayName": "veiled-vector-dashboard-00003-glv",
+    "labels": {
+      "client.knative.dev/nonce": "sijcmyhmvs",
+      "cloud.googleapis.com/location": "us-central1",
+      "run.googleapis.com/startupProbeType": "Default",
+      "serving.knative.dev/configuration": "veiled-vector-dashboard",
+      "serving.knative.dev/configurationGeneration": "3",
+      "serving.knative.dev/service": "veiled-vector-dashboard",
+      "serving.knative.dev/serviceUid": "21a49d57-b313-4ead-8c95-677c81e0746f"
+    },
+    "location": "us-central1",
+    "name": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/revisions/veiled-vector-dashboard-00003-glv",
+    "parentAssetType": "run.googleapis.com/Service",
+    "parentFullResourceName": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/services/veiled-vector-dashboard",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "run.googleapis.com/Execution",
+    "createTime": "2025-12-01T16:54:43Z",
+    "displayName": "orchestrator-job-fcws5",
+    "labels": {
+      "client.knative.dev/nonce": "tux_qoh_qar",
+      "cloud.googleapis.com/location": "us-central1",
+      "run.googleapis.com/job": "orchestrator-job",
+      "run.googleapis.com/jobGeneration": "2",
+      "run.googleapis.com/jobResourceVersion": "1764608063279814",
+      "run.googleapis.com/jobUid": "89c4deeb-bc7d-4504-93b9-e8dcc2c51331"
+    },
+    "location": "us-central1",
+    "name": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/executions/orchestrator-job-fcws5",
+    "parentAssetType": "run.googleapis.com/Job",
+    "parentFullResourceName": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/jobs/orchestrator-job",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "artifactregistry.googleapis.com/DockerImage",
+    "displayName": "projects/veiled-vector-core/locations/us-central1/repositories/veiled-vector-repo/dockerImages/orchestrator@sha256:9e6e9bd0137bf866502023f032866a3a873b8039d481b9c1531f7ebf652f2809",
+    "location": "us-central1",
+    "name": "//artifactregistry.googleapis.com/projects/veiled-vector-core/locations/us-central1/repositories/veiled-vector-repo/dockerImages/orchestrator@sha256:9e6e9bd0137bf866502023f032866a3a873b8039d481b9c1531f7ebf652f2809",
+    "parentAssetType": "artifactregistry.googleapis.com/Repository",
+    "parentFullResourceName": "//artifactregistry.googleapis.com/projects/veiled-vector-core/locations/us-central1/repositories/veiled-vector-repo",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "run.googleapis.com/Execution",
+    "createTime": "2025-12-01T16:34:20Z",
+    "displayName": "orchestrator-job-tmlhj",
+    "labels": {
+      "client.knative.dev/nonce": "fad_nop_deg",
+      "cloud.googleapis.com/location": "us-central1",
+      "run.googleapis.com/job": "orchestrator-job",
+      "run.googleapis.com/jobGeneration": "1",
+      "run.googleapis.com/jobResourceVersion": "1764606840712082",
+      "run.googleapis.com/jobUid": "89c4deeb-bc7d-4504-93b9-e8dcc2c51331"
+    },
+    "location": "us-central1",
+    "name": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/executions/orchestrator-job-tmlhj",
+    "parentAssetType": "run.googleapis.com/Job",
+    "parentFullResourceName": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/jobs/orchestrator-job",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "run.googleapis.com/Job",
+    "createTime": "2025-12-01T16:34:00Z",
+    "displayName": "orchestrator-job",
+    "labels": {
+      "cloud.googleapis.com/location": "us-central1",
+      "run.googleapis.com/lastUpdatedTime": "2025-12-01T16:54:22.978216Z"
+    },
+    "location": "us-central1",
+    "name": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/jobs/orchestrator-job",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "artifactregistry.googleapis.com/DockerImage",
+    "displayName": "projects/veiled-vector-core/locations/us-central1/repositories/veiled-vector-repo/dockerImages/orchestrator@sha256:94178e08d10c4dbbe0c32ba1f5ab2f8e299e8e52e249d0509fe620324d47447c",
+    "location": "us-central1",
+    "name": "//artifactregistry.googleapis.com/projects/veiled-vector-core/locations/us-central1/repositories/veiled-vector-repo/dockerImages/orchestrator@sha256:94178e08d10c4dbbe0c32ba1f5ab2f8e299e8e52e249d0509fe620324d47447c",
+    "parentAssetType": "artifactregistry.googleapis.com/Repository",
+    "parentFullResourceName": "//artifactregistry.googleapis.com/projects/veiled-vector-core/locations/us-central1/repositories/veiled-vector-repo",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "firebaserules.googleapis.com/Ruleset",
+    "createTime": "2025-12-01T07:59:05Z",
+    "displayName": "3b81f588-b215-4472-a852-959b2e4a3ede",
+    "location": "global",
+    "name": "//firebaserules.googleapis.com/projects/veiled-vector-core/rulesets/3b81f588-b215-4472-a852-959b2e4a3ede",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042"
+  },
+  {
+    "additionalAttributes": {
+      "statusImageDigest": "gcr.io/veiled-vector-core/veiled-vector-dashboard@sha256:78fad8ad8d8d5f4f5be090fbcb0efd705ff2ff3c5c7ebf150e4592261ddf9f6a"
+    },
+    "assetType": "run.googleapis.com/Revision",
+    "createTime": "2025-12-01T07:25:02Z",
+    "displayName": "veiled-vector-dashboard-00002-bsn",
+    "labels": {
+      "client.knative.dev/nonce": "rgeropyruu",
+      "cloud.googleapis.com/location": "us-central1",
+      "run.googleapis.com/startupProbeType": "Default",
+      "serving.knative.dev/configuration": "veiled-vector-dashboard",
+      "serving.knative.dev/configurationGeneration": "2",
+      "serving.knative.dev/service": "veiled-vector-dashboard",
+      "serving.knative.dev/serviceUid": "21a49d57-b313-4ead-8c95-677c81e0746f"
+    },
+    "location": "us-central1",
+    "name": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/revisions/veiled-vector-dashboard-00002-bsn",
+    "parentAssetType": "run.googleapis.com/Service",
+    "parentFullResourceName": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/services/veiled-vector-dashboard",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "containerregistry.googleapis.com/Image",
+    "createTime": "2025-12-01T07:24:55Z",
+    "displayName": "gcr.io/veiled-vector-core/veiled-vector-dashboard@sha256:78fad8ad8d8d5f4f5be090fbcb0efd705ff2ff3c5c7ebf150e4592261ddf9f6a",
+    "location": "us",
+    "name": "//containerregistry.googleapis.com/gcr.io/veiled-vector-core/veiled-vector-dashboard@sha256:78fad8ad8d8d5f4f5be090fbcb0efd705ff2ff3c5c7ebf150e4592261ddf9f6a",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042"
+  },
+  {
+    "additionalAttributes": {
+      "email": "firebase-adminsdk-fbsvc@veiled-vector-core.iam.gserviceaccount.com",
+      "uniqueId": "110251582266340160718"
+    },
+    "assetType": "iam.googleapis.com/ServiceAccount",
+    "description": "Firebase Admin SDK Service Agent",
+    "displayName": "firebase-adminsdk",
+    "location": "global",
+    "name": "//iam.googleapis.com/projects/veiled-vector-core/serviceAccounts/firebase-adminsdk-fbsvc@veiled-vector-core.iam.gserviceaccount.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "apikeys.googleapis.com/Key",
+    "createTime": "2025-12-01T06:31:20Z",
+    "displayName": "Browser key (auto created by Firebase)",
+    "name": "//apikeys.googleapis.com/projects/813376341042/locations/global/keys/c8e1da90-2f39-42ba-81eb-a631ad248644",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "updateTime": "2025-12-01T06:31:20Z"
+  },
+  {
+    "assetType": "firebaserules.googleapis.com/Release",
+    "createTime": "2025-12-01T05:34:56Z",
+    "displayName": "cloud.firestore",
+    "location": "global",
+    "name": "//firebaserules.googleapis.com/projects/veiled-vector-core/releases/cloud.firestore",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED",
+    "updateTime": "2025-12-01T07:59:05Z"
+  },
+  {
+    "assetType": "firebaserules.googleapis.com/Ruleset",
+    "createTime": "2025-12-01T05:34:55Z",
+    "displayName": "ab0a7dc5-4603-407a-9f20-713158e35116",
+    "location": "global",
+    "name": "//firebaserules.googleapis.com/projects/veiled-vector-core/rulesets/ab0a7dc5-4603-407a-9f20-713158e35116",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "run.googleapis.com/DomainMapping",
+    "createTime": "2025-12-01T04:14:21Z",
+    "displayName": "ceo-dashboard.veiledvector.space",
+    "labels": {
+      "cloud.googleapis.com/location": "us-central1",
+      "run.googleapis.com/overrideAt": "2025-12-01T04:14:25.892Z"
+    },
+    "location": "us-central1",
+    "name": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/domainmappings/ceo-dashboard.veiledvector.space",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042"
+  },
+  {
+    "additionalAttributes": {
+      "statusImageDigest": "gcr.io/veiled-vector-core/veiled-vector-dashboard@sha256:8a8e770c7ef80fa2f8bd8bdd853079c7ae53e1df9f6450b3b6a104ae977846c9"
+    },
+    "assetType": "run.googleapis.com/Revision",
+    "createTime": "2025-12-01T01:59:50Z",
+    "displayName": "veiled-vector-dashboard-00001-mq5",
+    "labels": {
+      "client.knative.dev/nonce": "qfsjrgpljr",
+      "cloud.googleapis.com/location": "us-central1",
+      "run.googleapis.com/startupProbeType": "Default",
+      "serving.knative.dev/configuration": "veiled-vector-dashboard",
+      "serving.knative.dev/configurationGeneration": "1",
+      "serving.knative.dev/service": "veiled-vector-dashboard",
+      "serving.knative.dev/serviceUid": "21a49d57-b313-4ead-8c95-677c81e0746f"
+    },
+    "location": "us-central1",
+    "name": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/revisions/veiled-vector-dashboard-00001-mq5",
+    "parentAssetType": "run.googleapis.com/Service",
+    "parentFullResourceName": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/services/veiled-vector-dashboard",
+    "project": "projects/813376341042"
+  },
+  {
+    "additionalAttributes": {
+      "statusUrl": "https://veiled-vector-dashboard-kzld2m5qwa-uc.a.run.app"
+    },
+    "assetType": "run.googleapis.com/Service",
+    "createTime": "2025-12-01T01:59:50Z",
+    "displayName": "veiled-vector-dashboard",
+    "labels": {
+      "cloud.googleapis.com/location": "us-central1"
+    },
+    "location": "us-central1",
+    "name": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/services/veiled-vector-dashboard",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "containerregistry.googleapis.com/Image",
+    "createTime": "2025-12-01T01:59:39Z",
+    "displayName": "gcr.io/veiled-vector-core/veiled-vector-dashboard@sha256:8a8e770c7ef80fa2f8bd8bdd853079c7ae53e1df9f6450b3b6a104ae977846c9",
+    "location": "us",
+    "name": "//containerregistry.googleapis.com/gcr.io/veiled-vector-core/veiled-vector-dashboard@sha256:8a8e770c7ef80fa2f8bd8bdd853079c7ae53e1df9f6450b3b6a104ae977846c9",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "run.googleapis.com/Execution",
+    "createTime": "2025-11-30T23:50:17Z",
+    "displayName": "veiled-vector-orchestrator-job-glq5h",
+    "labels": {
+      "client.knative.dev/nonce": "mub_sif_xur",
+      "cloud.googleapis.com/location": "us-central1",
+      "run.googleapis.com/job": "veiled-vector-orchestrator-job",
+      "run.googleapis.com/jobGeneration": "3",
+      "run.googleapis.com/jobResourceVersion": "1764546595801741",
+      "run.googleapis.com/jobUid": "1b7e8375-1e58-4066-88af-32bec11d146a"
+    },
+    "location": "us-central1",
+    "name": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/executions/veiled-vector-orchestrator-job-glq5h",
+    "parentAssetType": "run.googleapis.com/Job",
+    "parentFullResourceName": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/jobs/veiled-vector-orchestrator-job",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "artifactregistry.googleapis.com/DockerImage",
+    "displayName": "projects/veiled-vector-core/locations/us-central1/repositories/veiled-vector-repo/dockerImages/core@sha256:93b9fc457314d62e9e760a5e6501efea83d2e7102126fd8ead787cf4fff54320",
+    "location": "us-central1",
+    "name": "//artifactregistry.googleapis.com/projects/veiled-vector-core/locations/us-central1/repositories/veiled-vector-repo/dockerImages/core@sha256:93b9fc457314d62e9e760a5e6501efea83d2e7102126fd8ead787cf4fff54320",
+    "parentAssetType": "artifactregistry.googleapis.com/Repository",
+    "parentFullResourceName": "//artifactregistry.googleapis.com/projects/veiled-vector-core/locations/us-central1/repositories/veiled-vector-repo",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "run.googleapis.com/Execution",
+    "createTime": "2025-11-30T23:43:23Z",
+    "displayName": "veiled-vector-orchestrator-job-fg5sn",
+    "labels": {
+      "client.knative.dev/nonce": "jux_xit_get",
+      "cloud.googleapis.com/location": "us-central1",
+      "run.googleapis.com/job": "veiled-vector-orchestrator-job",
+      "run.googleapis.com/jobGeneration": "2",
+      "run.googleapis.com/jobResourceVersion": "1764546109222749",
+      "run.googleapis.com/jobUid": "1b7e8375-1e58-4066-88af-32bec11d146a"
+    },
+    "location": "us-central1",
+    "name": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/executions/veiled-vector-orchestrator-job-fg5sn",
+    "parentAssetType": "run.googleapis.com/Job",
+    "parentFullResourceName": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/jobs/veiled-vector-orchestrator-job",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "artifactregistry.googleapis.com/DockerImage",
+    "displayName": "projects/veiled-vector-core/locations/us-central1/repositories/veiled-vector-repo/dockerImages/core@sha256:58ffcf474bf8e721faba963be7ce88ac9c084fce85818f42d5808c7864655673",
+    "location": "us-central1",
+    "name": "//artifactregistry.googleapis.com/projects/veiled-vector-core/locations/us-central1/repositories/veiled-vector-repo/dockerImages/core@sha256:58ffcf474bf8e721faba963be7ce88ac9c084fce85818f42d5808c7864655673",
+    "parentAssetType": "artifactregistry.googleapis.com/Repository",
+    "parentFullResourceName": "//artifactregistry.googleapis.com/projects/veiled-vector-core/locations/us-central1/repositories/veiled-vector-repo",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "iam.googleapis.com/ServiceAccountKey",
+    "createTime": "2025-11-30T23:41:15Z",
+    "displayName": "projects/veiled-vector-core/serviceAccounts/firebase-adminsdk-fbsvc@veiled-vector-core.iam.gserviceaccount.com/keys/1faccd2391b4eca8d1b6745d20eb88b6b0a04469",
+    "location": "global",
+    "name": "//iam.googleapis.com/projects/veiled-vector-core/serviceAccounts/110251582266340160718/keys/1faccd2391b4eca8d1b6745d20eb88b6b0a04469",
+    "parentAssetType": "iam.googleapis.com/ServiceAccount",
+    "parentFullResourceName": "//iam.googleapis.com/projects/veiled-vector-core/serviceAccounts/firebase-adminsdk-fbsvc@veiled-vector-core.iam.gserviceaccount.com",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "run.googleapis.com/Execution",
+    "createTime": "2025-11-30T23:35:56Z",
+    "displayName": "veiled-vector-orchestrator-job-7nm9l",
+    "labels": {
+      "client.knative.dev/nonce": "tic_kom_fiw",
+      "cloud.googleapis.com/location": "us-central1",
+      "run.googleapis.com/job": "veiled-vector-orchestrator-job",
+      "run.googleapis.com/jobGeneration": "1",
+      "run.googleapis.com/jobResourceVersion": "1764545700910571",
+      "run.googleapis.com/jobUid": "1b7e8375-1e58-4066-88af-32bec11d146a"
+    },
+    "location": "us-central1",
+    "name": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/executions/veiled-vector-orchestrator-job-7nm9l",
+    "parentAssetType": "run.googleapis.com/Job",
+    "parentFullResourceName": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/jobs/veiled-vector-orchestrator-job",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "run.googleapis.com/Job",
+    "createTime": "2025-11-30T23:35:00Z",
+    "displayName": "veiled-vector-orchestrator-job",
+    "labels": {
+      "cloud.googleapis.com/location": "us-central1",
+      "run.googleapis.com/lastUpdatedTime": "2025-11-30T23:49:55.496241Z"
+    },
+    "location": "us-central1",
+    "name": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/jobs/veiled-vector-orchestrator-job",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "artifactregistry.googleapis.com/DockerImage",
+    "displayName": "projects/veiled-vector-core/locations/us-central1/repositories/veiled-vector-repo/dockerImages/core@sha256:fccb982de3e75e212416338cf35c7eeab458809293b381fbee34733bc3805af8",
+    "location": "us-central1",
+    "name": "//artifactregistry.googleapis.com/projects/veiled-vector-core/locations/us-central1/repositories/veiled-vector-repo/dockerImages/core@sha256:fccb982de3e75e212416338cf35c7eeab458809293b381fbee34733bc3805af8",
+    "parentAssetType": "artifactregistry.googleapis.com/Repository",
+    "parentFullResourceName": "//artifactregistry.googleapis.com/projects/veiled-vector-core/locations/us-central1/repositories/veiled-vector-repo",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "artifactregistry.googleapis.com/DockerImage",
+    "displayName": "projects/veiled-vector-core/locations/us-central1/repositories/veiled-vector-repo/dockerImages/core@sha256:85a9eda9557f972e912b5c7bad395c395871eba6de710f27e2c71533e2ffcff4",
+    "location": "us-central1",
+    "name": "//artifactregistry.googleapis.com/projects/veiled-vector-core/locations/us-central1/repositories/veiled-vector-repo/dockerImages/core@sha256:85a9eda9557f972e912b5c7bad395c395871eba6de710f27e2c71533e2ffcff4",
+    "parentAssetType": "artifactregistry.googleapis.com/Repository",
+    "parentFullResourceName": "//artifactregistry.googleapis.com/projects/veiled-vector-core/locations/us-central1/repositories/veiled-vector-repo",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "artifactregistry.googleapis.com/Repository",
+    "createTime": "2025-11-30T23:15:19Z",
+    "description": "Veiled Vector Core Docker Repository",
+    "displayName": "projects/veiled-vector-core/locations/us-central1/repositories/veiled-vector-repo",
+    "location": "us-central1",
+    "name": "//artifactregistry.googleapis.com/projects/veiled-vector-core/locations/us-central1/repositories/veiled-vector-repo",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "updateTime": "2025-12-01T18:24:34Z"
+  },
+  {
+    "additionalAttributes": {
+      "statusImageDigest": "gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:de4b17a22e690c51171db6acd921f9f9d883ec3ee8207027f4a5f25d31a6fd72"
+    },
+    "assetType": "run.googleapis.com/Revision",
+    "createTime": "2025-11-30T02:47:32Z",
+    "displayName": "veiled-vector-orchestrator-00026-27c",
+    "labels": {
+      "client.knative.dev/nonce": "biuzrlqlco",
+      "cloud.googleapis.com/location": "us-central1",
+      "run.googleapis.com/startupProbeType": "Default",
+      "serving.knative.dev/configuration": "veiled-vector-orchestrator",
+      "serving.knative.dev/configurationGeneration": "26",
+      "serving.knative.dev/route": "veiled-vector-orchestrator",
+      "serving.knative.dev/service": "veiled-vector-orchestrator",
+      "serving.knative.dev/serviceUid": "ddf2ca6a-8e2b-4a8e-b460-5964d256f055"
+    },
+    "location": "us-central1",
+    "name": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/revisions/veiled-vector-orchestrator-00026-27c",
+    "parentAssetType": "run.googleapis.com/Service",
+    "parentFullResourceName": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/services/veiled-vector-orchestrator",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "containerregistry.googleapis.com/Image",
+    "createTime": "2025-11-30T02:37:20Z",
+    "displayName": "gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:de4b17a22e690c51171db6acd921f9f9d883ec3ee8207027f4a5f25d31a6fd72",
+    "location": "us",
+    "name": "//containerregistry.googleapis.com/gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:de4b17a22e690c51171db6acd921f9f9d883ec3ee8207027f4a5f25d31a6fd72",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042"
+  },
+  {
+    "additionalAttributes": {
+      "statusImageDigest": "gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:d9b806eb05f4e0e9ae18afcd303540b35a474db436f28012e5aee280201c7889"
+    },
+    "assetType": "run.googleapis.com/Revision",
+    "createTime": "2025-11-30T01:49:41Z",
+    "displayName": "veiled-vector-orchestrator-00025-tnr",
+    "labels": {
+      "client.knative.dev/nonce": "mycqgvrcjh",
+      "cloud.googleapis.com/location": "us-central1",
+      "run.googleapis.com/startupProbeType": "Default",
+      "serving.knative.dev/configuration": "veiled-vector-orchestrator",
+      "serving.knative.dev/configurationGeneration": "25",
+      "serving.knative.dev/service": "veiled-vector-orchestrator",
+      "serving.knative.dev/serviceUid": "ddf2ca6a-8e2b-4a8e-b460-5964d256f055"
+    },
+    "location": "us-central1",
+    "name": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/revisions/veiled-vector-orchestrator-00025-tnr",
+    "parentAssetType": "run.googleapis.com/Service",
+    "parentFullResourceName": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/services/veiled-vector-orchestrator",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "containerregistry.googleapis.com/Image",
+    "createTime": "2025-11-30T01:49:36Z",
+    "displayName": "gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:d9b806eb05f4e0e9ae18afcd303540b35a474db436f28012e5aee280201c7889",
+    "location": "us",
+    "name": "//containerregistry.googleapis.com/gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:d9b806eb05f4e0e9ae18afcd303540b35a474db436f28012e5aee280201c7889",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042"
+  },
+  {
+    "additionalAttributes": {
+      "statusImageDigest": "gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:a4cf8594d7593bc1aa240162b7ca36fef39914afc6cc07a184fd4d4c7abdcc02"
+    },
+    "assetType": "run.googleapis.com/Revision",
+    "createTime": "2025-11-30T01:14:37Z",
+    "displayName": "veiled-vector-orchestrator-00024-mnv",
+    "labels": {
+      "client.knative.dev/nonce": "dlwshtdvmm",
+      "cloud.googleapis.com/location": "us-central1",
+      "run.googleapis.com/startupProbeType": "Default",
+      "serving.knative.dev/configuration": "veiled-vector-orchestrator",
+      "serving.knative.dev/configurationGeneration": "24",
+      "serving.knative.dev/service": "veiled-vector-orchestrator",
+      "serving.knative.dev/serviceUid": "ddf2ca6a-8e2b-4a8e-b460-5964d256f055"
+    },
+    "location": "us-central1",
+    "name": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/revisions/veiled-vector-orchestrator-00024-mnv",
+    "parentAssetType": "run.googleapis.com/Service",
+    "parentFullResourceName": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/services/veiled-vector-orchestrator",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "containerregistry.googleapis.com/Image",
+    "createTime": "2025-11-30T01:14:31Z",
+    "displayName": "gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:a4cf8594d7593bc1aa240162b7ca36fef39914afc6cc07a184fd4d4c7abdcc02",
+    "location": "us",
+    "name": "//containerregistry.googleapis.com/gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:a4cf8594d7593bc1aa240162b7ca36fef39914afc6cc07a184fd4d4c7abdcc02",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "secretmanager.googleapis.com/SecretVersion",
+    "createTime": "2025-11-30T00:56:46Z",
+    "displayName": "projects/813376341042/secrets/TAILSCALE_AUTH_KEY/versions/1",
+    "location": "global",
+    "name": "//secretmanager.googleapis.com/projects/813376341042/secrets/TAILSCALE_AUTH_KEY/versions/1",
+    "parentAssetType": "secretmanager.googleapis.com/Secret",
+    "parentFullResourceName": "//secretmanager.googleapis.com/projects/813376341042/secrets/TAILSCALE_AUTH_KEY",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "secretmanager.googleapis.com/Secret",
+    "createTime": "2025-11-30T00:56:46Z",
+    "displayName": "projects/813376341042/secrets/TAILSCALE_AUTH_KEY",
+    "location": "global",
+    "name": "//secretmanager.googleapis.com/projects/813376341042/secrets/TAILSCALE_AUTH_KEY",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "secretmanager.googleapis.com/SecretVersion",
+    "createTime": "2025-11-30T00:55:30Z",
+    "displayName": "projects/813376341042/secrets/GOOGLE_AI_STUDIO_KEY/versions/1",
+    "location": "global",
+    "name": "//secretmanager.googleapis.com/projects/813376341042/secrets/GOOGLE_AI_STUDIO_KEY/versions/1",
+    "parentAssetType": "secretmanager.googleapis.com/Secret",
+    "parentFullResourceName": "//secretmanager.googleapis.com/projects/813376341042/secrets/GOOGLE_AI_STUDIO_KEY",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "secretmanager.googleapis.com/Secret",
+    "createTime": "2025-11-30T00:55:29Z",
+    "displayName": "projects/813376341042/secrets/GOOGLE_AI_STUDIO_KEY",
+    "location": "global",
+    "name": "//secretmanager.googleapis.com/projects/813376341042/secrets/GOOGLE_AI_STUDIO_KEY",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042"
+  },
+  {
+    "additionalAttributes": {
+      "statusImageDigest": "gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:76ac7e98da167ebcdb9764acb24b105fb8c54589f3c07ea375ffe506fc224c7c"
+    },
+    "assetType": "run.googleapis.com/Revision",
+    "createTime": "2025-11-30T00:32:47Z",
+    "displayName": "veiled-vector-orchestrator-00023-99z",
+    "labels": {
+      "client.knative.dev/nonce": "ribijierjk",
+      "cloud.googleapis.com/location": "us-central1",
+      "run.googleapis.com/startupProbeType": "Default",
+      "serving.knative.dev/configuration": "veiled-vector-orchestrator",
+      "serving.knative.dev/configurationGeneration": "23",
+      "serving.knative.dev/service": "veiled-vector-orchestrator",
+      "serving.knative.dev/serviceUid": "ddf2ca6a-8e2b-4a8e-b460-5964d256f055"
+    },
+    "location": "us-central1",
+    "name": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/revisions/veiled-vector-orchestrator-00023-99z",
+    "parentAssetType": "run.googleapis.com/Service",
+    "parentFullResourceName": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/services/veiled-vector-orchestrator",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "containerregistry.googleapis.com/Image",
+    "createTime": "2025-11-30T00:32:42Z",
+    "displayName": "gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:76ac7e98da167ebcdb9764acb24b105fb8c54589f3c07ea375ffe506fc224c7c",
+    "location": "us",
+    "name": "//containerregistry.googleapis.com/gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:76ac7e98da167ebcdb9764acb24b105fb8c54589f3c07ea375ffe506fc224c7c",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "storage.googleapis.com/Bucket",
+    "createTime": "2025-11-30T00:28:04Z",
+    "displayName": "veiled-vector-data-veiled-vector-core",
+    "location": "us-central1",
+    "name": "//storage.googleapis.com/veiled-vector-data-veiled-vector-core",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "updateTime": "2025-11-30T00:28:04Z"
+  },
+  {
+    "additionalAttributes": {
+      "statusImageDigest": "gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:108be7ce99651cec7b78eb5f9a044111b1423f8ee2d87216592f2a4f59a41841"
+    },
+    "assetType": "run.googleapis.com/Revision",
+    "createTime": "2025-11-30T00:05:34Z",
+    "displayName": "veiled-vector-orchestrator-00022-pmg",
+    "labels": {
+      "client.knative.dev/nonce": "vxqwzhyyky",
+      "cloud.googleapis.com/location": "us-central1",
+      "run.googleapis.com/startupProbeType": "Default",
+      "serving.knative.dev/configuration": "veiled-vector-orchestrator",
+      "serving.knative.dev/configurationGeneration": "22",
+      "serving.knative.dev/service": "veiled-vector-orchestrator",
+      "serving.knative.dev/serviceUid": "ddf2ca6a-8e2b-4a8e-b460-5964d256f055"
+    },
+    "location": "us-central1",
+    "name": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/revisions/veiled-vector-orchestrator-00022-pmg",
+    "parentAssetType": "run.googleapis.com/Service",
+    "parentFullResourceName": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/services/veiled-vector-orchestrator",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "containerregistry.googleapis.com/Image",
+    "createTime": "2025-11-30T00:05:28Z",
+    "displayName": "gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:108be7ce99651cec7b78eb5f9a044111b1423f8ee2d87216592f2a4f59a41841",
+    "location": "us",
+    "name": "//containerregistry.googleapis.com/gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:108be7ce99651cec7b78eb5f9a044111b1423f8ee2d87216592f2a4f59a41841",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042"
+  },
+  {
+    "additionalAttributes": {
+      "statusImageDigest": "gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:9cb15ced8991ee12668e2b7e6807a6f7a8cc665d623d309c9f6180180b1a0e10"
+    },
+    "assetType": "run.googleapis.com/Revision",
+    "createTime": "2025-11-29T23:31:08Z",
+    "displayName": "veiled-vector-orchestrator-00021-n9m",
+    "labels": {
+      "client.knative.dev/nonce": "ufbufjdkyp",
+      "cloud.googleapis.com/location": "us-central1",
+      "run.googleapis.com/startupProbeType": "Default",
+      "serving.knative.dev/configuration": "veiled-vector-orchestrator",
+      "serving.knative.dev/configurationGeneration": "21",
+      "serving.knative.dev/service": "veiled-vector-orchestrator",
+      "serving.knative.dev/serviceUid": "ddf2ca6a-8e2b-4a8e-b460-5964d256f055"
+    },
+    "location": "us-central1",
+    "name": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/revisions/veiled-vector-orchestrator-00021-n9m",
+    "parentAssetType": "run.googleapis.com/Service",
+    "parentFullResourceName": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/services/veiled-vector-orchestrator",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "containerregistry.googleapis.com/Image",
+    "createTime": "2025-11-29T23:31:02Z",
+    "displayName": "gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:9cb15ced8991ee12668e2b7e6807a6f7a8cc665d623d309c9f6180180b1a0e10",
+    "location": "us",
+    "name": "//containerregistry.googleapis.com/gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:9cb15ced8991ee12668e2b7e6807a6f7a8cc665d623d309c9f6180180b1a0e10",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042"
+  },
+  {
+    "additionalAttributes": {
+      "statusImageDigest": "gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:bcc5ad2bbb3c8da9755dd620ed6833d4fd69f8d6850c1cd8bdf3c62d02e6db4a"
+    },
+    "assetType": "run.googleapis.com/Revision",
+    "createTime": "2025-11-29T23:06:22Z",
+    "displayName": "veiled-vector-orchestrator-00020-xsz",
+    "labels": {
+      "client.knative.dev/nonce": "fxzpfytzne",
+      "cloud.googleapis.com/location": "us-central1",
+      "run.googleapis.com/startupProbeType": "Default",
+      "serving.knative.dev/configuration": "veiled-vector-orchestrator",
+      "serving.knative.dev/configurationGeneration": "20",
+      "serving.knative.dev/service": "veiled-vector-orchestrator",
+      "serving.knative.dev/serviceUid": "ddf2ca6a-8e2b-4a8e-b460-5964d256f055"
+    },
+    "location": "us-central1",
+    "name": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/revisions/veiled-vector-orchestrator-00020-xsz",
+    "parentAssetType": "run.googleapis.com/Service",
+    "parentFullResourceName": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/services/veiled-vector-orchestrator",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "containerregistry.googleapis.com/Image",
+    "createTime": "2025-11-29T23:06:11Z",
+    "displayName": "gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:bcc5ad2bbb3c8da9755dd620ed6833d4fd69f8d6850c1cd8bdf3c62d02e6db4a",
+    "location": "us",
+    "name": "//containerregistry.googleapis.com/gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:bcc5ad2bbb3c8da9755dd620ed6833d4fd69f8d6850c1cd8bdf3c62d02e6db4a",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042"
+  },
+  {
+    "additionalAttributes": {
+      "statusImageDigest": "gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:547aa48fcb9313833b251dd348e77aa9a266213e3c8d08ae604582ff93a2acdc"
+    },
+    "assetType": "run.googleapis.com/Revision",
+    "createTime": "2025-11-29T22:32:43Z",
+    "displayName": "veiled-vector-orchestrator-00019-896",
+    "labels": {
+      "client.knative.dev/nonce": "uykvkejnvj",
+      "cloud.googleapis.com/location": "us-central1",
+      "run.googleapis.com/startupProbeType": "Default",
+      "serving.knative.dev/configuration": "veiled-vector-orchestrator",
+      "serving.knative.dev/configurationGeneration": "19",
+      "serving.knative.dev/service": "veiled-vector-orchestrator",
+      "serving.knative.dev/serviceUid": "ddf2ca6a-8e2b-4a8e-b460-5964d256f055"
+    },
+    "location": "us-central1",
+    "name": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/revisions/veiled-vector-orchestrator-00019-896",
+    "parentAssetType": "run.googleapis.com/Service",
+    "parentFullResourceName": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/services/veiled-vector-orchestrator",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "containerregistry.googleapis.com/Image",
+    "createTime": "2025-11-29T22:32:37Z",
+    "displayName": "gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:547aa48fcb9313833b251dd348e77aa9a266213e3c8d08ae604582ff93a2acdc",
+    "location": "us",
+    "name": "//containerregistry.googleapis.com/gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:547aa48fcb9313833b251dd348e77aa9a266213e3c8d08ae604582ff93a2acdc",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042"
+  },
+  {
+    "additionalAttributes": {
+      "statusImageDigest": "gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:3e8fcf98993fe80b7755ab0d1bd108d4860d20f7f4c26005958d845423661082"
+    },
+    "assetType": "run.googleapis.com/Revision",
+    "createTime": "2025-11-29T22:16:31Z",
+    "displayName": "veiled-vector-orchestrator-00018-qwq",
+    "labels": {
+      "client.knative.dev/nonce": "qctnftrxvt",
+      "cloud.googleapis.com/location": "us-central1",
+      "run.googleapis.com/startupProbeType": "Default",
+      "serving.knative.dev/configuration": "veiled-vector-orchestrator",
+      "serving.knative.dev/configurationGeneration": "18",
+      "serving.knative.dev/service": "veiled-vector-orchestrator",
+      "serving.knative.dev/serviceUid": "ddf2ca6a-8e2b-4a8e-b460-5964d256f055"
+    },
+    "location": "us-central1",
+    "name": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/revisions/veiled-vector-orchestrator-00018-qwq",
+    "parentAssetType": "run.googleapis.com/Service",
+    "parentFullResourceName": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/services/veiled-vector-orchestrator",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "containerregistry.googleapis.com/Image",
+    "createTime": "2025-11-29T22:16:25Z",
+    "displayName": "gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:3e8fcf98993fe80b7755ab0d1bd108d4860d20f7f4c26005958d845423661082",
+    "location": "us",
+    "name": "//containerregistry.googleapis.com/gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:3e8fcf98993fe80b7755ab0d1bd108d4860d20f7f4c26005958d845423661082",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042"
+  },
+  {
+    "additionalAttributes": {
+      "statusImageDigest": "gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:b6494375738a78b6ade0a9cfa1a9e52ed1714a5bc2e533b56c069c6c866568d7"
+    },
+    "assetType": "run.googleapis.com/Revision",
+    "createTime": "2025-11-29T21:56:47Z",
+    "displayName": "veiled-vector-orchestrator-00017-498",
+    "labels": {
+      "client.knative.dev/nonce": "jmutnkoxmb",
+      "cloud.googleapis.com/location": "us-central1",
+      "run.googleapis.com/startupProbeType": "Default",
+      "serving.knative.dev/configuration": "veiled-vector-orchestrator",
+      "serving.knative.dev/configurationGeneration": "17",
+      "serving.knative.dev/service": "veiled-vector-orchestrator",
+      "serving.knative.dev/serviceUid": "ddf2ca6a-8e2b-4a8e-b460-5964d256f055"
+    },
+    "location": "us-central1",
+    "name": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/revisions/veiled-vector-orchestrator-00017-498",
+    "parentAssetType": "run.googleapis.com/Service",
+    "parentFullResourceName": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/services/veiled-vector-orchestrator",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "containerregistry.googleapis.com/Image",
+    "createTime": "2025-11-29T21:56:42Z",
+    "displayName": "gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:b6494375738a78b6ade0a9cfa1a9e52ed1714a5bc2e533b56c069c6c866568d7",
+    "location": "us",
+    "name": "//containerregistry.googleapis.com/gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:b6494375738a78b6ade0a9cfa1a9e52ed1714a5bc2e533b56c069c6c866568d7",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042"
+  },
+  {
+    "additionalAttributes": {
+      "statusImageDigest": "gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:46cbeb0ac0321007926ba6a62c5356b6792a6558b66820964c15b7dfad203c14"
+    },
+    "assetType": "run.googleapis.com/Revision",
+    "createTime": "2025-11-29T21:23:24Z",
+    "displayName": "veiled-vector-orchestrator-00016-jh9",
+    "labels": {
+      "client.knative.dev/nonce": "axuwamekgz",
+      "cloud.googleapis.com/location": "us-central1",
+      "run.googleapis.com/startupProbeType": "Default",
+      "serving.knative.dev/configuration": "veiled-vector-orchestrator",
+      "serving.knative.dev/configurationGeneration": "16",
+      "serving.knative.dev/service": "veiled-vector-orchestrator",
+      "serving.knative.dev/serviceUid": "ddf2ca6a-8e2b-4a8e-b460-5964d256f055"
+    },
+    "location": "us-central1",
+    "name": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/revisions/veiled-vector-orchestrator-00016-jh9",
+    "parentAssetType": "run.googleapis.com/Service",
+    "parentFullResourceName": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/services/veiled-vector-orchestrator",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "containerregistry.googleapis.com/Image",
+    "createTime": "2025-11-29T21:23:18Z",
+    "displayName": "gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:46cbeb0ac0321007926ba6a62c5356b6792a6558b66820964c15b7dfad203c14",
+    "location": "us",
+    "name": "//containerregistry.googleapis.com/gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:46cbeb0ac0321007926ba6a62c5356b6792a6558b66820964c15b7dfad203c14",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042"
+  },
+  {
+    "additionalAttributes": {
+      "statusImageDigest": "gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:34937506f7717bd55e8cbb255fbc590d31ce7bea73cafcc9739f557dc5981694"
+    },
+    "assetType": "run.googleapis.com/Revision",
+    "createTime": "2025-11-29T21:11:35Z",
+    "displayName": "veiled-vector-orchestrator-00015-dgj",
+    "labels": {
+      "client.knative.dev/nonce": "famezdrrsh",
+      "cloud.googleapis.com/location": "us-central1",
+      "run.googleapis.com/startupProbeType": "Default",
+      "serving.knative.dev/configuration": "veiled-vector-orchestrator",
+      "serving.knative.dev/configurationGeneration": "15",
+      "serving.knative.dev/service": "veiled-vector-orchestrator",
+      "serving.knative.dev/serviceUid": "ddf2ca6a-8e2b-4a8e-b460-5964d256f055"
+    },
+    "location": "us-central1",
+    "name": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/revisions/veiled-vector-orchestrator-00015-dgj",
+    "parentAssetType": "run.googleapis.com/Service",
+    "parentFullResourceName": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/services/veiled-vector-orchestrator",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "containerregistry.googleapis.com/Image",
+    "createTime": "2025-11-29T21:11:29Z",
+    "displayName": "gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:34937506f7717bd55e8cbb255fbc590d31ce7bea73cafcc9739f557dc5981694",
+    "location": "us",
+    "name": "//containerregistry.googleapis.com/gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:34937506f7717bd55e8cbb255fbc590d31ce7bea73cafcc9739f557dc5981694",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042"
+  },
+  {
+    "additionalAttributes": {
+      "statusImageDigest": "gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:4f9b0ab6a4d2bf741f1345a511db0e533e47bda33d8475b65e8b1f430af7d816"
+    },
+    "assetType": "run.googleapis.com/Revision",
+    "createTime": "2025-11-29T20:56:46Z",
+    "displayName": "veiled-vector-orchestrator-00014-bj4",
+    "labels": {
+      "client.knative.dev/nonce": "hkgzaqiqap",
+      "cloud.googleapis.com/location": "us-central1",
+      "run.googleapis.com/startupProbeType": "Default",
+      "serving.knative.dev/configuration": "veiled-vector-orchestrator",
+      "serving.knative.dev/configurationGeneration": "14",
+      "serving.knative.dev/service": "veiled-vector-orchestrator",
+      "serving.knative.dev/serviceUid": "ddf2ca6a-8e2b-4a8e-b460-5964d256f055"
+    },
+    "location": "us-central1",
+    "name": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/revisions/veiled-vector-orchestrator-00014-bj4",
+    "parentAssetType": "run.googleapis.com/Service",
+    "parentFullResourceName": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/services/veiled-vector-orchestrator",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "containerregistry.googleapis.com/Image",
+    "createTime": "2025-11-29T20:56:40Z",
+    "displayName": "gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:4f9b0ab6a4d2bf741f1345a511db0e533e47bda33d8475b65e8b1f430af7d816",
+    "location": "us",
+    "name": "//containerregistry.googleapis.com/gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:4f9b0ab6a4d2bf741f1345a511db0e533e47bda33d8475b65e8b1f430af7d816",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042"
+  },
+  {
+    "additionalAttributes": {
+      "statusImageDigest": "gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:49be175543ad5386db8a48dfe162a4f0c0218d0a02bb6b127b5ef0657e851181"
+    },
+    "assetType": "run.googleapis.com/Revision",
+    "createTime": "2025-11-29T20:44:16Z",
+    "displayName": "veiled-vector-orchestrator-00013-t4r",
+    "labels": {
+      "client.knative.dev/nonce": "lauptvlwxn",
+      "cloud.googleapis.com/location": "us-central1",
+      "run.googleapis.com/startupProbeType": "Default",
+      "serving.knative.dev/configuration": "veiled-vector-orchestrator",
+      "serving.knative.dev/configurationGeneration": "13",
+      "serving.knative.dev/service": "veiled-vector-orchestrator",
+      "serving.knative.dev/serviceUid": "ddf2ca6a-8e2b-4a8e-b460-5964d256f055"
+    },
+    "location": "us-central1",
+    "name": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/revisions/veiled-vector-orchestrator-00013-t4r",
+    "parentAssetType": "run.googleapis.com/Service",
+    "parentFullResourceName": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/services/veiled-vector-orchestrator",
+    "project": "projects/813376341042"
+  },
+  {
+    "additionalAttributes": {
+      "statusImageDigest": "gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:49be175543ad5386db8a48dfe162a4f0c0218d0a02bb6b127b5ef0657e851181"
+    },
+    "assetType": "run.googleapis.com/Revision",
+    "createTime": "2025-11-29T20:31:45Z",
+    "displayName": "veiled-vector-orchestrator-00012-jzq",
+    "labels": {
+      "client.knative.dev/nonce": "pabeipxoaq",
+      "cloud.googleapis.com/location": "us-central1",
+      "run.googleapis.com/startupProbeType": "Default",
+      "serving.knative.dev/configuration": "veiled-vector-orchestrator",
+      "serving.knative.dev/configurationGeneration": "12",
+      "serving.knative.dev/service": "veiled-vector-orchestrator",
+      "serving.knative.dev/serviceUid": "ddf2ca6a-8e2b-4a8e-b460-5964d256f055"
+    },
+    "location": "us-central1",
+    "name": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/revisions/veiled-vector-orchestrator-00012-jzq",
+    "parentAssetType": "run.googleapis.com/Service",
+    "parentFullResourceName": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/services/veiled-vector-orchestrator",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "containerregistry.googleapis.com/Image",
+    "createTime": "2025-11-29T20:31:38Z",
+    "displayName": "gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:49be175543ad5386db8a48dfe162a4f0c0218d0a02bb6b127b5ef0657e851181",
+    "location": "us",
+    "name": "//containerregistry.googleapis.com/gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:49be175543ad5386db8a48dfe162a4f0c0218d0a02bb6b127b5ef0657e851181",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042"
+  },
+  {
+    "additionalAttributes": {
+      "statusImageDigest": "gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:a5f094f22a3b13237a71febeafe7d00ade32782e0ad5f64ec53bfb2a082a3961"
+    },
+    "assetType": "run.googleapis.com/Revision",
+    "createTime": "2025-11-29T20:09:09Z",
+    "displayName": "veiled-vector-orchestrator-00011-l9c",
+    "labels": {
+      "client.knative.dev/nonce": "flnsexlysh",
+      "cloud.googleapis.com/location": "us-central1",
+      "run.googleapis.com/startupProbeType": "Default",
+      "serving.knative.dev/configuration": "veiled-vector-orchestrator",
+      "serving.knative.dev/configurationGeneration": "11",
+      "serving.knative.dev/service": "veiled-vector-orchestrator",
+      "serving.knative.dev/serviceUid": "ddf2ca6a-8e2b-4a8e-b460-5964d256f055"
+    },
+    "location": "us-central1",
+    "name": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/revisions/veiled-vector-orchestrator-00011-l9c",
+    "parentAssetType": "run.googleapis.com/Service",
+    "parentFullResourceName": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/services/veiled-vector-orchestrator",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "containerregistry.googleapis.com/Image",
+    "createTime": "2025-11-29T20:09:03Z",
+    "displayName": "gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:a5f094f22a3b13237a71febeafe7d00ade32782e0ad5f64ec53bfb2a082a3961",
+    "location": "us",
+    "name": "//containerregistry.googleapis.com/gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:a5f094f22a3b13237a71febeafe7d00ade32782e0ad5f64ec53bfb2a082a3961",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042"
+  },
+  {
+    "additionalAttributes": {
+      "statusImageDigest": "gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:726a29f6d6228d5f6b0066cc0c56d7c807c3bf6259d6ac05a131bd44f238db4c"
+    },
+    "assetType": "run.googleapis.com/Revision",
+    "createTime": "2025-11-29T19:41:42Z",
+    "displayName": "veiled-vector-orchestrator-00010-v6d",
+    "labels": {
+      "client.knative.dev/nonce": "jmqovareuu",
+      "cloud.googleapis.com/location": "us-central1",
+      "run.googleapis.com/startupProbeType": "Default",
+      "serving.knative.dev/configuration": "veiled-vector-orchestrator",
+      "serving.knative.dev/configurationGeneration": "10",
+      "serving.knative.dev/service": "veiled-vector-orchestrator",
+      "serving.knative.dev/serviceUid": "ddf2ca6a-8e2b-4a8e-b460-5964d256f055"
+    },
+    "location": "us-central1",
+    "name": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/revisions/veiled-vector-orchestrator-00010-v6d",
+    "parentAssetType": "run.googleapis.com/Service",
+    "parentFullResourceName": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/services/veiled-vector-orchestrator",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "containerregistry.googleapis.com/Image",
+    "createTime": "2025-11-29T19:41:36Z",
+    "displayName": "gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:726a29f6d6228d5f6b0066cc0c56d7c807c3bf6259d6ac05a131bd44f238db4c",
+    "location": "us",
+    "name": "//containerregistry.googleapis.com/gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:726a29f6d6228d5f6b0066cc0c56d7c807c3bf6259d6ac05a131bd44f238db4c",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042"
+  },
+  {
+    "additionalAttributes": {
+      "statusImageDigest": "gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:4fd28ef6e67df58c1f1676529c67004a959fadcc5a2d9bde909e4fd4df435f0b"
+    },
+    "assetType": "run.googleapis.com/Revision",
+    "createTime": "2025-11-29T19:20:20Z",
+    "displayName": "veiled-vector-orchestrator-00009-2hz",
+    "labels": {
+      "client.knative.dev/nonce": "tngojafgmd",
+      "cloud.googleapis.com/location": "us-central1",
+      "run.googleapis.com/startupProbeType": "Default",
+      "serving.knative.dev/configuration": "veiled-vector-orchestrator",
+      "serving.knative.dev/configurationGeneration": "9",
+      "serving.knative.dev/service": "veiled-vector-orchestrator",
+      "serving.knative.dev/serviceUid": "ddf2ca6a-8e2b-4a8e-b460-5964d256f055"
+    },
+    "location": "us-central1",
+    "name": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/revisions/veiled-vector-orchestrator-00009-2hz",
+    "parentAssetType": "run.googleapis.com/Service",
+    "parentFullResourceName": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/services/veiled-vector-orchestrator",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "containerregistry.googleapis.com/Image",
+    "createTime": "2025-11-29T19:20:15Z",
+    "displayName": "gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:4fd28ef6e67df58c1f1676529c67004a959fadcc5a2d9bde909e4fd4df435f0b",
+    "location": "us",
+    "name": "//containerregistry.googleapis.com/gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:4fd28ef6e67df58c1f1676529c67004a959fadcc5a2d9bde909e4fd4df435f0b",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042"
+  },
+  {
+    "additionalAttributes": {
+      "statusImageDigest": "gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:107a24ffc2b10268faec484b3e4eeaa85f200642b8d558abe5a119efa16df739"
+    },
+    "assetType": "run.googleapis.com/Revision",
+    "createTime": "2025-11-29T18:59:44Z",
+    "displayName": "veiled-vector-orchestrator-00008-j67",
+    "labels": {
+      "client.knative.dev/nonce": "hoygmygmgc",
+      "cloud.googleapis.com/location": "us-central1",
+      "run.googleapis.com/startupProbeType": "Default",
+      "serving.knative.dev/configuration": "veiled-vector-orchestrator",
+      "serving.knative.dev/configurationGeneration": "8",
+      "serving.knative.dev/service": "veiled-vector-orchestrator",
+      "serving.knative.dev/serviceUid": "ddf2ca6a-8e2b-4a8e-b460-5964d256f055"
+    },
+    "location": "us-central1",
+    "name": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/revisions/veiled-vector-orchestrator-00008-j67",
+    "parentAssetType": "run.googleapis.com/Service",
+    "parentFullResourceName": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/services/veiled-vector-orchestrator",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "containerregistry.googleapis.com/Image",
+    "createTime": "2025-11-29T18:59:39Z",
+    "displayName": "gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:107a24ffc2b10268faec484b3e4eeaa85f200642b8d558abe5a119efa16df739",
+    "location": "us",
+    "name": "//containerregistry.googleapis.com/gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:107a24ffc2b10268faec484b3e4eeaa85f200642b8d558abe5a119efa16df739",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042"
+  },
+  {
+    "additionalAttributes": {
+      "statusImageDigest": "gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:c4266f75b93ccd1da2a6dba9fd43b70e64c740df9dd42ddad064bc5a39b6e96f"
+    },
+    "assetType": "run.googleapis.com/Revision",
+    "createTime": "2025-11-29T18:48:23Z",
+    "displayName": "veiled-vector-orchestrator-00007-ptt",
+    "labels": {
+      "client.knative.dev/nonce": "nodaqibagf",
+      "cloud.googleapis.com/location": "us-central1",
+      "run.googleapis.com/startupProbeType": "Default",
+      "serving.knative.dev/configuration": "veiled-vector-orchestrator",
+      "serving.knative.dev/configurationGeneration": "7",
+      "serving.knative.dev/service": "veiled-vector-orchestrator",
+      "serving.knative.dev/serviceUid": "ddf2ca6a-8e2b-4a8e-b460-5964d256f055"
+    },
+    "location": "us-central1",
+    "name": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/revisions/veiled-vector-orchestrator-00007-ptt",
+    "parentAssetType": "run.googleapis.com/Service",
+    "parentFullResourceName": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/services/veiled-vector-orchestrator",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "containerregistry.googleapis.com/Image",
+    "createTime": "2025-11-29T18:48:17Z",
+    "displayName": "gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:c4266f75b93ccd1da2a6dba9fd43b70e64c740df9dd42ddad064bc5a39b6e96f",
+    "location": "us",
+    "name": "//containerregistry.googleapis.com/gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:c4266f75b93ccd1da2a6dba9fd43b70e64c740df9dd42ddad064bc5a39b6e96f",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042"
+  },
+  {
+    "additionalAttributes": {
+      "statusImageDigest": "gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:c8dfed49f410804a8ce9e7d77dc41f59afd7579bc02cea886d66c90ca7b555fc"
+    },
+    "assetType": "run.googleapis.com/Revision",
+    "createTime": "2025-11-29T18:43:26Z",
+    "displayName": "veiled-vector-orchestrator-00006-nmd",
+    "labels": {
+      "client.knative.dev/nonce": "pjmpcijoot",
+      "cloud.googleapis.com/location": "us-central1",
+      "run.googleapis.com/startupProbeType": "Default",
+      "serving.knative.dev/configuration": "veiled-vector-orchestrator",
+      "serving.knative.dev/configurationGeneration": "6",
+      "serving.knative.dev/service": "veiled-vector-orchestrator",
+      "serving.knative.dev/serviceUid": "ddf2ca6a-8e2b-4a8e-b460-5964d256f055"
+    },
+    "location": "us-central1",
+    "name": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/revisions/veiled-vector-orchestrator-00006-nmd",
+    "parentAssetType": "run.googleapis.com/Service",
+    "parentFullResourceName": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/services/veiled-vector-orchestrator",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "containerregistry.googleapis.com/Image",
+    "createTime": "2025-11-29T18:43:19Z",
+    "displayName": "gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:c8dfed49f410804a8ce9e7d77dc41f59afd7579bc02cea886d66c90ca7b555fc",
+    "location": "us",
+    "name": "//containerregistry.googleapis.com/gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:c8dfed49f410804a8ce9e7d77dc41f59afd7579bc02cea886d66c90ca7b555fc",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042"
+  },
+  {
+    "additionalAttributes": {
+      "statusImageDigest": "gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:a80691740aeabed581f1fb3acb1a98e34dfb00c98899b1a92eb4155428e53590"
+    },
+    "assetType": "run.googleapis.com/Revision",
+    "createTime": "2025-11-29T18:39:52Z",
+    "displayName": "veiled-vector-orchestrator-00005-xkm",
+    "labels": {
+      "client.knative.dev/nonce": "avsrpvsjpm",
+      "cloud.googleapis.com/location": "us-central1",
+      "run.googleapis.com/startupProbeType": "Default",
+      "serving.knative.dev/configuration": "veiled-vector-orchestrator",
+      "serving.knative.dev/configurationGeneration": "5",
+      "serving.knative.dev/service": "veiled-vector-orchestrator",
+      "serving.knative.dev/serviceUid": "ddf2ca6a-8e2b-4a8e-b460-5964d256f055"
+    },
+    "location": "us-central1",
+    "name": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/revisions/veiled-vector-orchestrator-00005-xkm",
+    "parentAssetType": "run.googleapis.com/Service",
+    "parentFullResourceName": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/services/veiled-vector-orchestrator",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "containerregistry.googleapis.com/Image",
+    "createTime": "2025-11-29T18:39:46Z",
+    "displayName": "gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:a80691740aeabed581f1fb3acb1a98e34dfb00c98899b1a92eb4155428e53590",
+    "location": "us",
+    "name": "//containerregistry.googleapis.com/gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:a80691740aeabed581f1fb3acb1a98e34dfb00c98899b1a92eb4155428e53590",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042"
+  },
+  {
+    "additionalAttributes": {
+      "statusImageDigest": "gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:cc18dd06ed5211d6b953d01c78889c12a483cef307b313d68a842f49f55b3564"
+    },
+    "assetType": "run.googleapis.com/Revision",
+    "createTime": "2025-11-29T18:28:46Z",
+    "displayName": "veiled-vector-orchestrator-00004-9bl",
+    "labels": {
+      "client.knative.dev/nonce": "qqkdcjqbfq",
+      "cloud.googleapis.com/location": "us-central1",
+      "run.googleapis.com/startupProbeType": "Default",
+      "serving.knative.dev/configuration": "veiled-vector-orchestrator",
+      "serving.knative.dev/configurationGeneration": "4",
+      "serving.knative.dev/service": "veiled-vector-orchestrator",
+      "serving.knative.dev/serviceUid": "ddf2ca6a-8e2b-4a8e-b460-5964d256f055"
+    },
+    "location": "us-central1",
+    "name": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/revisions/veiled-vector-orchestrator-00004-9bl",
+    "parentAssetType": "run.googleapis.com/Service",
+    "parentFullResourceName": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/services/veiled-vector-orchestrator",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "containerregistry.googleapis.com/Image",
+    "createTime": "2025-11-29T18:28:40Z",
+    "displayName": "gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:cc18dd06ed5211d6b953d01c78889c12a483cef307b313d68a842f49f55b3564",
+    "location": "us",
+    "name": "//containerregistry.googleapis.com/gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:cc18dd06ed5211d6b953d01c78889c12a483cef307b313d68a842f49f55b3564",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042"
+  },
+  {
+    "additionalAttributes": {
+      "statusImageDigest": "gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:f19099862ce37a9bf653180cf1d4ed7932ff929109cdd60422ca8b6db276b28a"
+    },
+    "assetType": "run.googleapis.com/Revision",
+    "createTime": "2025-11-29T18:22:58Z",
+    "displayName": "veiled-vector-orchestrator-00003-jvv",
+    "labels": {
+      "client.knative.dev/nonce": "dxybwctnna",
+      "cloud.googleapis.com/location": "us-central1",
+      "run.googleapis.com/startupProbeType": "Default",
+      "serving.knative.dev/configuration": "veiled-vector-orchestrator",
+      "serving.knative.dev/configurationGeneration": "3",
+      "serving.knative.dev/service": "veiled-vector-orchestrator",
+      "serving.knative.dev/serviceUid": "ddf2ca6a-8e2b-4a8e-b460-5964d256f055"
+    },
+    "location": "us-central1",
+    "name": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/revisions/veiled-vector-orchestrator-00003-jvv",
+    "parentAssetType": "run.googleapis.com/Service",
+    "parentFullResourceName": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/services/veiled-vector-orchestrator",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "containerregistry.googleapis.com/Image",
+    "createTime": "2025-11-29T18:22:52Z",
+    "displayName": "gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:f19099862ce37a9bf653180cf1d4ed7932ff929109cdd60422ca8b6db276b28a",
+    "location": "us",
+    "name": "//containerregistry.googleapis.com/gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:f19099862ce37a9bf653180cf1d4ed7932ff929109cdd60422ca8b6db276b28a",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042"
+  },
+  {
+    "additionalAttributes": {
+      "statusImageDigest": "gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:520a0ee2df071075e4795c2156f61a64296309c2624883e27433394b6d7ea346"
+    },
+    "assetType": "run.googleapis.com/Revision",
+    "createTime": "2025-11-29T18:19:48Z",
+    "displayName": "veiled-vector-orchestrator-00002-8ch",
+    "labels": {
+      "client.knative.dev/nonce": "lrwncnyfnx",
+      "cloud.googleapis.com/location": "us-central1",
+      "run.googleapis.com/startupProbeType": "Default",
+      "serving.knative.dev/configuration": "veiled-vector-orchestrator",
+      "serving.knative.dev/configurationGeneration": "2",
+      "serving.knative.dev/service": "veiled-vector-orchestrator",
+      "serving.knative.dev/serviceUid": "ddf2ca6a-8e2b-4a8e-b460-5964d256f055"
+    },
+    "location": "us-central1",
+    "name": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/revisions/veiled-vector-orchestrator-00002-8ch",
+    "parentAssetType": "run.googleapis.com/Service",
+    "parentFullResourceName": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/services/veiled-vector-orchestrator",
+    "project": "projects/813376341042"
+  },
+  {
+    "additionalAttributes": {
+      "statusImageDigest": "gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:520a0ee2df071075e4795c2156f61a64296309c2624883e27433394b6d7ea346"
+    },
+    "assetType": "run.googleapis.com/Revision",
+    "createTime": "2025-11-29T18:14:47Z",
+    "displayName": "veiled-vector-orchestrator-00001-s2h",
+    "labels": {
+      "client.knative.dev/nonce": "hqlkertbui",
+      "cloud.googleapis.com/location": "us-central1",
+      "run.googleapis.com/startupProbeType": "Default",
+      "serving.knative.dev/configuration": "veiled-vector-orchestrator",
+      "serving.knative.dev/configurationGeneration": "1",
+      "serving.knative.dev/service": "veiled-vector-orchestrator",
+      "serving.knative.dev/serviceUid": "ddf2ca6a-8e2b-4a8e-b460-5964d256f055"
+    },
+    "location": "us-central1",
+    "name": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/revisions/veiled-vector-orchestrator-00001-s2h",
+    "parentAssetType": "run.googleapis.com/Service",
+    "parentFullResourceName": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/services/veiled-vector-orchestrator",
+    "project": "projects/813376341042"
+  },
+  {
+    "additionalAttributes": {
+      "statusUrl": "https://veiled-vector-orchestrator-kzld2m5qwa-uc.a.run.app"
+    },
+    "assetType": "run.googleapis.com/Service",
+    "createTime": "2025-11-29T18:14:46Z",
+    "displayName": "veiled-vector-orchestrator",
+    "labels": {
+      "cloud.googleapis.com/location": "us-central1"
+    },
+    "location": "us-central1",
+    "name": "//run.googleapis.com/projects/veiled-vector-core/locations/us-central1/services/veiled-vector-orchestrator",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "containerregistry.googleapis.com/Image",
+    "createTime": "2025-11-29T18:14:41Z",
+    "displayName": "gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:520a0ee2df071075e4795c2156f61a64296309c2624883e27433394b6d7ea346",
+    "location": "us",
+    "name": "//containerregistry.googleapis.com/gcr.io/veiled-vector-core/veiled-vector-orchestrator@sha256:520a0ee2df071075e4795c2156f61a64296309c2624883e27433394b6d7ea346",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "artifactregistry.googleapis.com/Repository",
+    "createTime": "2025-11-29T18:14:31Z",
+    "displayName": "projects/veiled-vector-core/locations/us/repositories/gcr.io",
+    "location": "us",
+    "name": "//artifactregistry.googleapis.com/projects/veiled-vector-core/locations/us/repositories/gcr.io",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "updateTime": "2025-12-01T07:24:55Z"
+  },
+  {
+    "assetType": "storage.googleapis.com/Bucket",
+    "createTime": "2025-11-29T18:13:47Z",
+    "displayName": "veiled-vector-core_cloudbuild",
+    "location": "us",
+    "name": "//storage.googleapis.com/veiled-vector-core_cloudbuild",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "updateTime": "2025-11-29T18:13:47Z"
+  },
+  {
+    "assetType": "apikeys.googleapis.com/Key",
+    "createTime": "2025-11-29T17:55:56Z",
+    "displayName": "veiled-vector-core-key",
+    "name": "//apikeys.googleapis.com/projects/813376341042/locations/global/keys/f822f6db-a8e8-477b-a50e-49fc0ea4bb16",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "updateTime": "2025-11-29T17:55:56Z"
+  },
+  {
+    "assetType": "iam.googleapis.com/ServiceAccountKey",
+    "createTime": "2025-11-29T17:00:47Z",
+    "displayName": "projects/veiled-vector-core/serviceAccounts/vector-archivist@veiled-vector-core.iam.gserviceaccount.com/keys/7b0899ec108cd90c8ad84aa96c13744da7d4a8ad",
+    "location": "global",
+    "name": "//iam.googleapis.com/projects/veiled-vector-core/serviceAccounts/108016123452563227124/keys/7b0899ec108cd90c8ad84aa96c13744da7d4a8ad",
+    "parentAssetType": "iam.googleapis.com/ServiceAccount",
+    "parentFullResourceName": "//iam.googleapis.com/projects/veiled-vector-core/serviceAccounts/vector-archivist@veiled-vector-core.iam.gserviceaccount.com",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "secretmanager.googleapis.com/Secret",
+    "createTime": "2025-11-29T16:40:36Z",
+    "displayName": "projects/813376341042/secrets/DRIVE_SERVICE_ACCOUNT_KEY",
+    "location": "global",
+    "name": "//secretmanager.googleapis.com/projects/813376341042/secrets/DRIVE_SERVICE_ACCOUNT_KEY",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "secretmanager.googleapis.com/SecretVersion",
+    "createTime": "2025-11-29T16:40:36Z",
+    "displayName": "projects/813376341042/secrets/DRIVE_SERVICE_ACCOUNT_KEY/versions/1",
+    "location": "global",
+    "name": "//secretmanager.googleapis.com/projects/813376341042/secrets/DRIVE_SERVICE_ACCOUNT_KEY/versions/1",
+    "parentAssetType": "secretmanager.googleapis.com/Secret",
+    "parentFullResourceName": "//secretmanager.googleapis.com/projects/813376341042/secrets/DRIVE_SERVICE_ACCOUNT_KEY",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "iam.googleapis.com/ServiceAccountKey",
+    "createTime": "2025-11-29T16:36:10Z",
+    "displayName": "projects/veiled-vector-core/serviceAccounts/vector-archivist@veiled-vector-core.iam.gserviceaccount.com/keys/35ba6bf2d90166192e2842cb40aa91cc11c601db",
+    "location": "global",
+    "name": "//iam.googleapis.com/projects/veiled-vector-core/serviceAccounts/108016123452563227124/keys/35ba6bf2d90166192e2842cb40aa91cc11c601db",
+    "parentAssetType": "iam.googleapis.com/ServiceAccount",
+    "parentFullResourceName": "//iam.googleapis.com/projects/veiled-vector-core/serviceAccounts/vector-archivist@veiled-vector-core.iam.gserviceaccount.com",
+    "project": "projects/813376341042"
+  },
+  {
+    "additionalAttributes": {
+      "email": "vector-archivist@veiled-vector-core.iam.gserviceaccount.com",
+      "uniqueId": "108016123452563227124"
+    },
+    "assetType": "iam.googleapis.com/ServiceAccount",
+    "description": "vector-archivist",
+    "displayName": "vector-archivist",
+    "location": "global",
+    "name": "//iam.googleapis.com/projects/veiled-vector-core/serviceAccounts/vector-archivist@veiled-vector-core.iam.gserviceaccount.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "firebaserules.googleapis.com/Ruleset",
+    "createTime": "2025-11-29T16:24:27Z",
+    "displayName": "3cff5321-c0fb-4e63-9af0-a1742bbedd30",
+    "location": "global",
+    "name": "//firebaserules.googleapis.com/projects/veiled-vector-core/rulesets/3cff5321-c0fb-4e63-9af0-a1742bbedd30",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "firebaserules.googleapis.com/Release",
+    "createTime": "2025-11-29T16:24:27Z",
+    "displayName": "veiled-vector-core-firestore",
+    "location": "global",
+    "name": "//firebaserules.googleapis.com/projects/veiled-vector-core/releases/cloud.firestore/veiled-vector-core-firestore",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED",
+    "updateTime": "2025-11-29T16:24:27Z"
+  },
+  {
+    "assetType": "firestore.googleapis.com/Database",
+    "createTime": "2025-11-29T16:24:23Z",
+    "displayName": "veiled-vector-core-firestore",
+    "location": "us-central1",
+    "name": "//firestore.googleapis.com/projects/813376341042/databases/veiled-vector-core-firestore",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "updateTime": "2025-11-29T16:24:23Z"
+  },
+  {
+    "additionalAttributes": {
+      "email": "813376341042-compute@developer.gserviceaccount.com",
+      "uniqueId": "102481921437206272420"
+    },
+    "assetType": "iam.googleapis.com/ServiceAccount",
+    "displayName": "Default compute service account",
+    "location": "global",
+    "name": "//iam.googleapis.com/projects/veiled-vector-core/serviceAccounts/813376341042-compute@developer.gserviceaccount.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "additionalAttributes": {
+      "projectId": "veiled-vector-core"
+    },
+    "assetType": "cloudresourcemanager.googleapis.com/Project",
+    "createTime": "2025-11-29T16:10:52Z",
+    "displayName": "veiled-vector-core",
+    "labels": {
+      "firebase": "enabled",
+      "firebase-core": "disabled"
+    },
+    "location": "global",
+    "name": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ACTIVE"
+  },
+  {
+    "assetType": "iam.googleapis.com/ServiceAccountKey",
+    "createTime": "2025-11-28T16:35:42Z",
+    "displayName": "projects/veiled-vector-core/serviceAccounts/vector-archivist@veiled-vector-core.iam.gserviceaccount.com/keys/ad5dbe405ccac4a31376e00608b5754065415099",
+    "location": "global",
+    "name": "//iam.googleapis.com/projects/veiled-vector-core/serviceAccounts/108016123452563227124/keys/ad5dbe405ccac4a31376e00608b5754065415099",
+    "parentAssetType": "iam.googleapis.com/ServiceAccount",
+    "parentFullResourceName": "//iam.googleapis.com/projects/veiled-vector-core/serviceAccounts/vector-archivist@veiled-vector-core.iam.gserviceaccount.com",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "iam.googleapis.com/ServiceAccountKey",
+    "createTime": "2025-11-28T16:17:36Z",
+    "displayName": "projects/veiled-vector-core/serviceAccounts/813376341042-compute@developer.gserviceaccount.com/keys/23e7cb3c9bda5eeba35beeb11ba4dd72d12b03dd",
+    "location": "global",
+    "name": "//iam.googleapis.com/projects/veiled-vector-core/serviceAccounts/102481921437206272420/keys/23e7cb3c9bda5eeba35beeb11ba4dd72d12b03dd",
+    "parentAssetType": "iam.googleapis.com/ServiceAccount",
+    "parentFullResourceName": "//iam.googleapis.com/projects/veiled-vector-core/serviceAccounts/813376341042-compute@developer.gserviceaccount.com",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "bigquery.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/bigquery.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "firebaseremoteconfig.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/firebaseremoteconfig.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "secretmanager.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/secretmanager.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "bigquerymigration.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/bigquerymigration.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "bigqueryconnection.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/bigqueryconnection.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "pubsub.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/pubsub.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "cloudasset.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/cloudasset.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "cloudaicompanion.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/cloudaicompanion.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "cloudbuild.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/cloudbuild.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "bigqueryreservation.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/bigqueryreservation.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "source.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/source.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "connectors.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/connectors.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "storage-component.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/storage-component.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "bigquerydatapolicy.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/bigquerydatapolicy.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "firebasehosting.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/firebasehosting.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "logging.googleapis.com/LogSink",
+    "displayName": "_Required",
+    "location": "global",
+    "name": "//logging.googleapis.com/projects/813376341042/sinks/_Required",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "cloudapis.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/cloudapis.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "firebase.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/firebase.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "testing.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/testing.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "cloudtrace.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/cloudtrace.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "dataform.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/dataform.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "fcm.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/fcm.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "firebaserules.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/firebaserules.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "logging.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/logging.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "datastore.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/datastore.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "appengine.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/appengine.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "firestore.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/firestore.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "runtimeconfig.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/runtimeconfig.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "bigquerystorage.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/bigquerystorage.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "firebaseinstallations.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/firebaseinstallations.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "run.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/run.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "monitoring.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/monitoring.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "servicemanagement.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/servicemanagement.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "bigquerydatatransfer.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/bigquerydatatransfer.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "serviceusage.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/serviceusage.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "logging.googleapis.com/LogSink",
+    "displayName": "_Default",
+    "location": "global",
+    "name": "//logging.googleapis.com/projects/813376341042/sinks/_Default",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "developerconnect.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/developerconnect.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "artifactregistry.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/artifactregistry.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "dataplex.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/dataplex.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "analyticshub.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/analyticshub.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "firebase.googleapis.com/FirebaseProject",
+    "displayName": "veiled-vector-core",
+    "labels": {
+      "firebase": "enabled"
+    },
+    "name": "//firebase.googleapis.com/projects/813376341042",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ACTIVE"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "containerregistry.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/containerregistry.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "geminicloudassist.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/geminicloudassist.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "logging.googleapis.com/LogBucket",
+    "description": "Default bucket",
+    "displayName": "_Default",
+    "location": "global",
+    "name": "//logging.googleapis.com/projects/813376341042/locations/global/buckets/_Default",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ACTIVE"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "firebaseremoteconfigrealtime.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/firebaseremoteconfigrealtime.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "cloudscheduler.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/cloudscheduler.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "securetoken.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/securetoken.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "logging.googleapis.com/LogBucket",
+    "description": "Audit bucket",
+    "displayName": "_Required",
+    "location": "global",
+    "name": "//logging.googleapis.com/projects/813376341042/locations/global/buckets/_Required",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ACTIVE"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "storage.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/storage.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "aiplatform.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/aiplatform.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "sql-component.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/sql-component.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "cloudresourcemanager.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/cloudresourcemanager.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "identitytoolkit.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/identitytoolkit.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "assetType": "serviceusage.googleapis.com/Service",
+    "displayName": "generativelanguage.googleapis.com",
+    "location": "global",
+    "name": "//serviceusage.googleapis.com/projects/813376341042/services/generativelanguage.googleapis.com",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ENABLED"
+  },
+  {
+    "additionalAttributes": {
+      "environment": "GEN_2"
+    },
+    "assetType": "cloudfunctions.googleapis.com/Function",
+    "displayName": "morning-briefing",
+    "labels": {
+      "deployment-tool": "cli-gcloud"
+    },
+    "location": "us-central1",
+    "name": "//cloudfunctions.googleapis.com/projects/veiled-vector-core/locations/us-central1/functions/morning-briefing",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/veiled-vector-core",
+    "project": "projects/813376341042",
+    "state": "ACTIVE"
+  }
+]

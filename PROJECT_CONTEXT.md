@@ -32,9 +32,23 @@ To avoid future bottlenecks, **Data Gravity** must reside in the Cloud (HQ), not
 *   **Dashboard**: `cloud/dashboard_source` (Next.js on Cloud Run).
 *   **Agent**: `cloud/agents_source/morning_briefing` (Cloud Function).
 *   **Edge Daemon**: `edge/akuma_internal/ingest_daemon.py` (Python on Akuma).
-*   **Pipeline**: Cloud Dashboard -> Pub/Sub -> Edge Daemon (Verified).
+*   **Dashboard**: V2 "Glass Box" Live. (Dark Mode, Kill Switch, Telemetry Beacon).
 
-## 4. Immediate Roadmap (Day 2)
+## 5. Infrastructure Discovery (Dark Matter)
+*Scanned via `gcloud asset` on 2025-12-07*
+### Active Neurons (Confimed Active)
+*   **Cloud Run**: `corp-dashboard`, `verify-pipeline`
+*   **Cloud Functions**: `morning-briefing` (Gen2)
+*   **Pub/Sub**: `corp-task-dispatch`, `corp-task-results`, `akuma-ingest-sub`
+*   **Secret Manager**: `akuma-hello-secret`
+
+### Dormant/Legacy (Potential Orphans)
+*   **Cloud Run Jobs**: `orchestrator-job` (Last Run: 2025-12-01)
+*   **BigQuery**: `veiled_vector_data` (Dataset)
+*   **Pub/Sub**: `raw-data-events` (Topic), `raw-data-debug` (Sub)
+*   **Legacy Dashboard**: `veiled-vector-dashboard` (Old Service)
+
+## 6. Immediate Roadmap (Day 2)
 1.  **Initialize Git**: Done.
 2.  **QA Review**: Done.
 3.  **Phase 5: The Muscles (Edge Execution)**: **ACTIVE**.
