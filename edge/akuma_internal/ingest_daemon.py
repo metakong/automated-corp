@@ -11,6 +11,10 @@ from shared.api_schemas.task_types import TaskPayload
 
 PROJECT_ID = "veiled-vector-core"
 SUBSCRIPTION_ID = "akuma-ingest-sub"
+RESULT_TOPIC_ID = "corp-task-results"
+
+publisher = pubsub_v1.PublisherClient()
+result_topic_path = publisher.topic_path(PROJECT_ID, RESULT_TOPIC_ID)
 
 def callback(message):
     try:
@@ -44,6 +48,21 @@ def callback(message):
                 
             if result:
                  print(f"  [Success] Result: {result}")
+                 
+                 # --- Phase 7: Telemetry Loop ---
+                 try:
+                     result_payload = {
+                         "task_id": task.get("task_id", "unknown"),
+                         "task_type": task_type,
+                         "status": "COMPLETED" if "error" not in result else "FAILED",
+                         "data": result,
+                         "timestamp": time.time(),
+                         "processor": "AKUMA_EDGE_01"
+                     }
+                     future = publisher.publish(result_topic_path, json.dumps(result_payload).encode("utf-8"))
+                     print(f"  [Telemetry] Sent result: {future.result()}")
+                 except Exception as pub_err:
+                     print(f"  [Telemetry] Failed to publish result: {pub_err}")
             
             print("  [Processing...] -> Done.")
         except json.JSONDecodeError:
