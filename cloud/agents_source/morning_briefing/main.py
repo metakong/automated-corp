@@ -7,17 +7,12 @@ import time
 import os
 import datetime
 
-# Initialize Clients
+# Initialize PubSub (Safe to be global)
 publisher = pubsub_v1.PublisherClient()
 PROJECT_ID = os.environ.get("GCP_PROJECT", "veiled-vector-core")
 REGION = "us-central1"
 TOPIC_ID = "corp-task-dispatch"
 topic_path = publisher.topic_path(PROJECT_ID, TOPIC_ID)
-
-# Initialize Vertex AI
-print(f"Initializing Vertex AI for project {PROJECT_ID}...")
-vertexai.init(project=PROJECT_ID, location=REGION)
-model = GenerativeModel("gemini-1.5-flash-001")
 
 @functions_framework.http
 def trigger_morning_briefing(request):
@@ -28,22 +23,29 @@ def trigger_morning_briefing(request):
     """
     print("Triggering Intelligent Morning Briefing...")
     
-    # 1. Ask Gemini
-    today = datetime.datetime.now().strftime("%Y-%m-%d")
-    prompt = f"""
-    You are the Chief Intelligence Officer of an Automated Corporation.
-    Today is {today}.
-    Generate a specific, high-value search query to research the most important AI development from the last 24 hours.
-    Return ONLY the raw search query string. No quotes.
-    """
-    
+    query = "Artificial Intelligence News Today" # Default Fallback
+
     try:
+        # Lazy Init Vertex AI
+        print(f"Initializing Vertex AI for project {PROJECT_ID}...")
+        vertexai.init(project=PROJECT_ID, location=REGION)
+        model = GenerativeModel("gemini-1.5-flash-001")
+        
+        today = datetime.datetime.now().strftime("%Y-%m-%d")
+        prompt = f"""
+        You are the Chief Intelligence Officer of an Automated Corporation.
+        Today is {today}.
+        Generate a specific, high-value search query to research the most important AI development from the last 24 hours.
+        Return ONLY the raw search query string. No quotes.
+        """
+        
         response = model.generate_content(prompt)
         query = response.text.strip()
         print(f"Gemini Generated Query: {query}")
+        
     except Exception as e:
         print(f"Vertex AI Error: {e}")
-        query = "Artificial Intelligence News Today" # Fallback
+        # Continue with fallback query
 
     # 2. Dispatch Task
     payload = {
