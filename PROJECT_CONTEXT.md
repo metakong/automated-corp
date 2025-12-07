@@ -38,12 +38,12 @@ To avoid future bottlenecks, **Data Gravity** must reside in the Cloud (HQ), not
 *Scanned via `gcloud asset` on 2025-12-07*
 ### Active Neurons (Confimed Active)
 *   **Cloud Run**: `corp-dashboard`, `verify-pipeline`
-*   **Cloud Functions**: `morning-briefing` (Gen2)
+*   **Cloud Functions**: `morning-briefing` (Gen2), `orchestrator-inbox-manager` (Eventarc)
 *   **Pub/Sub**: `corp-task-dispatch`, `corp-task-results`, `akuma-ingest-sub`
+*   **Firestore**: `inbox` collection (Command Center Backend)
 *   **Secret Manager**: `akuma-hello-secret`
 
 ### Dormant/Legacy (Potential Orphans)
-*   **Cloud Run Jobs**: `orchestrator-job` (Last Run: 2025-12-01)
 *   **BigQuery**: `veiled_vector_data` (Dataset)
 *   **Pub/Sub**: `raw-data-events` (Topic), `raw-data-debug` (Sub)
 *   **Legacy Dashboard**: `veiled-vector-dashboard` (Old Service)

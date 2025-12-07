@@ -1,34 +1,53 @@
 "use client";
 
-import { useState } from "react";
-import { Terminal, Send, Cpu, Activity, Zap } from 'lucide-react';
+import { useState, useEffect } from "react";
+import { Terminal, Send, Cpu, Activity, Inbox as InboxIcon } from 'lucide-react';
 import { TelemetryBeacon } from "../components/TelemetryBeacon";
 import { KillSwitch } from "../components/KillSwitch";
 import { MissionCard } from "../components/MissionCard";
+import { InboxItem } from "../components/InboxItem";
 
 export default function Home() {
   const [loading, setLoading] = useState<string | null>(null);
-  const [lastResult, setLastResult] = useState<any>(null);
+  const [inboxItems, setInboxItems] = useState<any[]>([]);
 
-  const dispatchTask = async (taskId: string, type: string, payload: any) => {
+  // 1. Fetch Inbox (Polling for V1, Realtime Stream V2)
+  const fetchInbox = async () => {
+    const res = await fetch('/api/inbox');
+    const data = await res.json();
+    if (data.items) setInboxItems(data.items);
+  };
+
+  useEffect(() => {
+    fetchInbox();
+    const interval = setInterval(fetchInbox, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
+  // 2. Request Task (Creates Pending Item)
+  const requestTask = async (taskId: string, type: string, payload: any) => {
     setLoading(taskId);
-    setLastResult(null);
     try {
-      const res = await fetch('/api/dispatch', {
+      await fetch('/api/inbox', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ type, data: payload })
+        body: JSON.stringify({ action: "CREATE", type, payload })
       });
-      const data = await res.json();
-      if (data.success) {
-        // Mock result for now, Phase 7 widget will pull real data later
-        setLastResult({ id: data.messageId, status: "DISPATCHED", time: new Date().toLocaleTimeString() });
-      }
+      fetchInbox(); // Refresh immediately
     } catch (e) {
       console.error(e);
     } finally {
-      setTimeout(() => setLoading(null), 1000); // UI feedback delay
+      setLoading(null);
     }
+  };
+
+  // 3. Approve/Reject Task
+  const handleDecision = async (id: string, decision: "APPROVED" | "REJECTED") => {
+    await fetch('/api/inbox', {
+      method: 'POST',
+      body: JSON.stringify({ action: "UPDATE", docId: id, status: decision })
+    });
+    // Optimistic update
+    setInboxItems(prev => prev.filter(item => item.id !== id));
   };
 
   return (
@@ -42,7 +61,7 @@ export default function Home() {
           </h1>
           <div className="flex items-center gap-2 text-slate-500 text-sm font-mono">
             <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
-            SYSTEM VERSION 2.0.1 (YOLO-BUILD)
+            SYSTEM VERSION 3.0.0 (COMMAND CENTER)
           </div>
         </div>
         <TelemetryBeacon />
@@ -51,93 +70,88 @@ export default function Home() {
       {/* Control Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
 
-        {/* Left Col: Mission Control */}
+        {/* Left Col: Mission Control & Inbox */}
         <div className="lg:col-span-3 space-y-8">
 
-          {/* North Star Metrics (Day 2 Placeholder Implementation) */}
+          {/* North Star Metrics */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {/* ... Kept same metrics for now ... */}
             <div className="p-4 bg-slate-900/50 border border-slate-800 rounded-lg">
-              <div className="text-slate-500 text-xs font-bold mb-1 uppercase tracking-wider">Estimated burn</div>
-              <div className="text-2xl font-mono text-white">$0.04</div>
+              <div className="text-slate-500 text-xs font-bold mb-1 uppercase tracking-wider">Pending Decisions</div>
+              <div className="text-2xl font-mono text-amber-500">{inboxItems.length}</div>
             </div>
-            <div className="p-4 bg-slate-900/50 border border-slate-800 rounded-lg">
-              <div className="text-slate-500 text-xs font-bold mb-1 uppercase tracking-wider">Agents Active</div>
-              <div className="text-2xl font-mono text-emerald-400">2</div>
+            {/* ... others ... */}
+          </div>
+
+          {/* THE DECISION INBOX */}
+          <div className="bg-slate-900/20 border border-slate-800 rounded-xl overflow-hidden min-h-[300px]">
+            <div className="p-6 border-b border-slate-800 bg-slate-950/50 flex items-center justify-between">
+              <h2 className="text-lg font-bold text-white flex items-center gap-2">
+                <InboxIcon className="w-5 h-5 text-amber-500" /> DECISION INBOX
+              </h2>
+              <div className="text-xs font-mono text-slate-500">
+                Waiting for CEO authorization...
+              </div>
             </div>
-            <div className="p-4 bg-slate-900/50 border border-slate-800 rounded-lg">
-              <div className="text-slate-500 text-xs font-bold mb-1 uppercase tracking-wider">Tasks Today</div>
-              <div className="text-2xl font-mono text-blue-400">14</div>
-            </div>
-            <div className="p-4 bg-slate-900/50 border border-slate-800 rounded-lg">
-              <div className="text-slate-500 text-xs font-bold mb-1 uppercase tracking-wider">Next Briefing</div>
-              <div className="text-2xl font-mono text-slate-400">08:00</div>
+
+            <div className="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {inboxItems.length === 0 ? (
+                <div className="col-span-full flex flex-col items-center justify-center h-48 text-slate-600 gap-2">
+                  <InboxIcon className="w-8 h-8 opacity-20" />
+                  <p className="text-sm">No pending requests.</p>
+                </div>
+              ) : (
+                inboxItems.map(item => (
+                  <InboxItem
+                    key={item.id}
+                    {...item}
+                    payload={JSON.parse(item.payload)}
+                    onAction={handleDecision}
+                  />
+                ))
+              )}
             </div>
           </div>
 
-          {/* Mission Deck */}
+          {/* Mission Deck (Standard Requests) */}
           <div>
             <h2 className="text-xl font-bold text-white mb-6 flex items-center gap-2">
-              <Activity className="w-5 h-5 text-blue-500" /> ACTIVE MISSIONS
+              <Activity className="w-5 h-5 text-blue-500" /> REQUEST MISSIONS
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <MissionCard
                 title="System Diagnostics"
-                description="Query Akuma Edge Node for CPU, Memory, and Disk telemetry."
+                description="Request Telemetry Update"
                 icon={Cpu}
                 color="text-emerald-400"
-                onClick={() => dispatchTask("sys", "SYSTEM_CHECK", { msg: "Manual Override" })}
+                onClick={() => requestTask("sys", "SYSTEM_CHECK", { msg: "Manual Override" })}
                 loading={loading === "sys"}
               />
-
               <MissionCard
                 title="Deep Research"
-                description="Dispatch Morning Briefing Agent to scan external sources using Playwright."
+                description="Request Market Analysis"
                 icon={Send}
                 color="text-blue-400"
-                onClick={() => dispatchTask("res", "RESEARCH", { query: "Manual Research Request" })}
+                onClick={() => requestTask("res", "RESEARCH", { query: "Manual Research Request" })}
                 loading={loading === "res"}
               />
-
               <MissionCard
                 title="Code Mutation"
-                description="Authorize Akuma to perform self-modification on the local filesystem."
+                description="Request Self-Optimizaton"
                 icon={Terminal}
                 color="text-amber-400"
-                onClick={() => dispatchTask("code", "CODE_MOD", { target: "logs/manual.log", operation: "write", content: "Manual Entry" })}
+                onClick={() => requestTask("code", "CODE_MOD", { target: "logs/manual.log", operation: "write", content: "Manual Entry" })}
                 loading={loading === "code"}
               />
             </div>
           </div>
-
-          {/* Terminal Output / Result Preview */}
-          {lastResult && (
-            <div className="mt-8 p-6 bg-black border border-slate-800 rounded-lg font-mono text-sm text-green-400">
-              <div className="flex items-center gap-2 mb-2 text-slate-500">
-                <Zap className="w-4 h-4" /> DISPATCH LOG
-              </div>
-              <pre>{JSON.stringify(lastResult, null, 2)}</pre>
-            </div>
-          )}
 
         </div>
 
         {/* Right Col: Safety & Governance */}
         <div className="space-y-6">
           <KillSwitch />
-
-          <div className="p-6 bg-slate-900/30 border border-slate-800/50 rounded-xl">
-            <h3 className="text-slate-400 font-bold text-sm mb-4">SWARM TOPOLOGY</h3>
-            <div className="flex gap-4 items-center mb-4">
-              <div className="w-2 h-16 bg-gradient-to-b from-blue-500/50 to-emerald-500/50 rounded-full"></div>
-              <div className="flex flex-col gap-4">
-                <div className="text-xs text-slate-300 bg-slate-800 px-3 py-1 rounded">CLOUD HQ (You)</div>
-                <div className="text-xs text-emerald-400 bg-emerald-950/30 border border-emerald-500/20 px-3 py-1 rounded">AKUMA (Edge)</div>
-              </div>
-            </div>
-            <div className="text-[10px] text-slate-600">
-              1 Node Connected. Swarm Expansion Pending.
-            </div>
-          </div>
+          {/* Legacy Swarm Topology ... */}
         </div>
 
       </div>
