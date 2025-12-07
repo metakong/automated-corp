@@ -1,14 +1,18 @@
 "use client";
 
-import { useState } from 'react';
-import { Terminal, Send, Activity, Shield, Cpu } from 'lucide-react';
+import { useState } from "react";
+import { Terminal, Send, Cpu, Activity, Zap } from 'lucide-react';
+import { TelemetryBeacon } from "../components/TelemetryBeacon";
+import { KillSwitch } from "../components/KillSwitch";
+import { MissionCard } from "../components/MissionCard";
 
 export default function Home() {
-  const [status, setStatus] = useState<string>("Ready");
-  const [lastId, setLastId] = useState<string | null>(null);
+  const [loading, setLoading] = useState<string | null>(null);
+  const [lastResult, setLastResult] = useState<any>(null);
 
-  const dispatchTask = async (type: string, payload: any) => {
-    setStatus("Dispatching...");
+  const dispatchTask = async (taskId: string, type: string, payload: any) => {
+    setLoading(taskId);
+    setLastResult(null);
     try {
       const res = await fetch('/api/dispatch', {
         method: 'POST',
@@ -17,84 +21,125 @@ export default function Home() {
       });
       const data = await res.json();
       if (data.success) {
-        setStatus(`Sent: ${data.messageId}`);
-        setLastId(data.messageId);
-      } else {
-        setStatus("Failed");
+        // Mock result for now, Phase 7 widget will pull real data later
+        setLastResult({ id: data.messageId, status: "DISPATCHED", time: new Date().toLocaleTimeString() });
       }
     } catch (e) {
       console.error(e);
-      setStatus("Error");
+    } finally {
+      setTimeout(() => setLoading(null), 1000); // UI feedback delay
     }
   };
 
   return (
-    <main className="min-h-screen p-8 font-sans">
-      {/* Header */}
-      <header className="mb-12 border-b border-slate-800 pb-4 flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <Shield className="w-8 h-8 text-emerald-500" />
-          <h1 className="text-2xl font-bold tracking-tight text-white">
-            AUTOMATED CORP <span className="text-emerald-500">//</span> CLOUD HQ
+    <main className="min-h-screen bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-slate-900 via-slate-950 to-slate-950 p-6 md:p-12 font-sans text-slate-200">
+
+      {/* Header Layer */}
+      <header className="flex flex-col md:flex-row items-start md:items-center justify-between mb-12 gap-6 border-b border-slate-800/50 pb-8">
+        <div>
+          <h1 className="text-3xl font-black tracking-tighter text-white mb-2">
+            AUTOMATED CORP <span className="text-emerald-500">//</span> HQ
           </h1>
+          <div className="flex items-center gap-2 text-slate-500 text-sm font-mono">
+            <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
+            SYSTEM VERSION 2.0.1 (YOLO-BUILD)
+          </div>
         </div>
-        <div className="flex items-center gap-2 text-sm text-slate-400">
-          <Activity className="w-4 h-4" />
-          <span>SYSTEM ONLINE</span>
-        </div>
+        <TelemetryBeacon />
       </header>
 
-      {/* Status Deck */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-        <div className="p-6 rounded-lg bg-slate-900 border border-slate-800">
-          <h2 className="text-slate-400 text-sm mb-2">OPERATIONAL STATUS</h2>
-          <div className="text-2xl font-bold text-emerald-400">{status}</div>
-          {lastId && <div className="text-xs text-slate-500 mt-2 font-mono">ID: {lastId}</div>}
-        </div>
-        <div className="p-6 rounded-lg bg-slate-900 border border-slate-800">
-          <h2 className="text-slate-400 text-sm mb-2">CONNECTED AGENTS</h2>
-          <div className="text-2xl font-bold text-white">1</div>
-          <div className="text-xs text-slate-500 mt-2">AKUMA (EDGE) via Pub/Sub</div>
-        </div>
-        <div className="p-6 rounded-lg bg-slate-900 border border-slate-800">
-          <h2 className="text-slate-400 text-sm mb-2">SECURITY LEVEL</h2>
-          <div className="text-2xl font-bold text-amber-500">IRON DOME</div>
-          <div className="text-xs text-slate-500 mt-2">Authenticated Only</div>
-        </div>
-      </div>
+      {/* Control Grid */}
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
 
-      {/* Dispatch Console */}
-      <div className="border border-slate-800 rounded-xl overflow-hidden">
-        <div className="bg-slate-900 p-4 border-b border-slate-800 flex items-center gap-2">
-          <Terminal className="w-5 h-5 text-slate-400" />
-          <h3 className="font-bold text-white">DISPATCH CONSOLE</h3>
+        {/* Left Col: Mission Control */}
+        <div className="lg:col-span-3 space-y-8">
+
+          {/* North Star Metrics (Day 2 Placeholder Implementation) */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="p-4 bg-slate-900/50 border border-slate-800 rounded-lg">
+              <div className="text-slate-500 text-xs font-bold mb-1 uppercase tracking-wider">Estimated burn</div>
+              <div className="text-2xl font-mono text-white">$0.04</div>
+            </div>
+            <div className="p-4 bg-slate-900/50 border border-slate-800 rounded-lg">
+              <div className="text-slate-500 text-xs font-bold mb-1 uppercase tracking-wider">Agents Active</div>
+              <div className="text-2xl font-mono text-emerald-400">2</div>
+            </div>
+            <div className="p-4 bg-slate-900/50 border border-slate-800 rounded-lg">
+              <div className="text-slate-500 text-xs font-bold mb-1 uppercase tracking-wider">Tasks Today</div>
+              <div className="text-2xl font-mono text-blue-400">14</div>
+            </div>
+            <div className="p-4 bg-slate-900/50 border border-slate-800 rounded-lg">
+              <div className="text-slate-500 text-xs font-bold mb-1 uppercase tracking-wider">Next Briefing</div>
+              <div className="text-2xl font-mono text-slate-400">08:00</div>
+            </div>
+          </div>
+
+          {/* Mission Deck */}
+          <div>
+            <h2 className="text-xl font-bold text-white mb-6 flex items-center gap-2">
+              <Activity className="w-5 h-5 text-blue-500" /> ACTIVE MISSIONS
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <MissionCard
+                title="System Diagnostics"
+                description="Query Akuma Edge Node for CPU, Memory, and Disk telemetry."
+                icon={Cpu}
+                color="text-emerald-400"
+                onClick={() => dispatchTask("sys", "SYSTEM_CHECK", { msg: "Manual Override" })}
+                loading={loading === "sys"}
+              />
+
+              <MissionCard
+                title="Deep Research"
+                description="Dispatch Morning Briefing Agent to scan external sources using Playwright."
+                icon={Send}
+                color="text-blue-400"
+                onClick={() => dispatchTask("res", "RESEARCH", { query: "Manual Research Request" })}
+                loading={loading === "res"}
+              />
+
+              <MissionCard
+                title="Code Mutation"
+                description="Authorize Akuma to perform self-modification on the local filesystem."
+                icon={Terminal}
+                color="text-amber-400"
+                onClick={() => dispatchTask("code", "CODE_MOD", { target: "logs/manual.log", operation: "write", content: "Manual Entry" })}
+                loading={loading === "code"}
+              />
+            </div>
+          </div>
+
+          {/* Terminal Output / Result Preview */}
+          {lastResult && (
+            <div className="mt-8 p-6 bg-black border border-slate-800 rounded-lg font-mono text-sm text-green-400">
+              <div className="flex items-center gap-2 mb-2 text-slate-500">
+                <Zap className="w-4 h-4" /> DISPATCH LOG
+              </div>
+              <pre>{JSON.stringify(lastResult, null, 2)}</pre>
+            </div>
+          )}
+
         </div>
 
-        <div className="p-6 bg-slate-950 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          <button
-            onClick={() => dispatchTask("SYSTEM_CHECK", { msg: "Ping" })}
-            className="p-4 bg-slate-900 hover:bg-slate-800 border border-slate-700 hover:border-emerald-500/50 rounded flex flex-col items-center gap-3 transition-all group"
-          >
-            <Cpu className="w-6 h-6 text-slate-400 group-hover:text-emerald-400" />
-            <span className="text-sm font-medium">System Check</span>
-          </button>
+        {/* Right Col: Safety & Governance */}
+        <div className="space-y-6">
+          <KillSwitch />
 
-          <button
-            onClick={() => dispatchTask("RESEARCH", { topic: "Latest AI Trends" })}
-            className="p-4 bg-slate-900 hover:bg-slate-800 border border-slate-700 hover:border-blue-500/50 rounded flex flex-col items-center gap-3 transition-all group"
-          >
-            <Send className="w-6 h-6 text-slate-400 group-hover:text-blue-400" />
-            <span className="text-sm font-medium">Dispatch Research</span>
-          </button>
-
-          <button
-            onClick={() => dispatchTask("CODE_MOD", { target: "self", operation: "optimize" })}
-            className="p-4 bg-slate-900 hover:bg-slate-800 border border-slate-700 hover:border-purple-500/50 rounded flex flex-col items-center gap-3 transition-all group"
-          >
-            <Terminal className="w-6 h-6 text-slate-400 group-hover:text-purple-400" />
-            <span className="text-sm font-medium">Code Modification</span>
-          </button>
+          <div className="p-6 bg-slate-900/30 border border-slate-800/50 rounded-xl">
+            <h3 className="text-slate-400 font-bold text-sm mb-4">SWARM TOPOLOGY</h3>
+            <div className="flex gap-4 items-center mb-4">
+              <div className="w-2 h-16 bg-gradient-to-b from-blue-500/50 to-emerald-500/50 rounded-full"></div>
+              <div className="flex flex-col gap-4">
+                <div className="text-xs text-slate-300 bg-slate-800 px-3 py-1 rounded">CLOUD HQ (You)</div>
+                <div className="text-xs text-emerald-400 bg-emerald-950/30 border border-emerald-500/20 px-3 py-1 rounded">AKUMA (Edge)</div>
+              </div>
+            </div>
+            <div className="text-[10px] text-slate-600">
+              1 Node Connected. Swarm Expansion Pending.
+            </div>
+          </div>
         </div>
+
       </div>
     </main>
   );

@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Automated Corp // Cloud HQ",
-  description: "CEO Command Deck",
+  title: "Automated Corp // HQ",
+  description: "Central Neural Interface for Automated Corporation",
 };
 
 export default function RootLayout({
@@ -16,9 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <body
-        className={`${inter.className} antialiased bg-slate-950 text-slate-200`}
-      >
+      <body className="antialiased bg-slate-950 text-slate-50 min-h-screen">
         {children}
       </body>
     </html>
