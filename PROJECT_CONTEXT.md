@@ -32,7 +32,7 @@ To avoid future bottlenecks, **Data Gravity** must reside in the Cloud (HQ), not
 *   **Dashboard**: `cloud/dashboard_source` (Next.js on Cloud Run).
 *   **Agent**: `cloud/agents_source/morning_briefing` (Cloud Function).
 *   **Edge Daemon**: `edge/akuma_internal/ingest_daemon.py` (Python on Akuma).
-*   **Dashboard**: V2 "Glass Box" Live. (Dark Mode, Kill Switch, Telemetry Beacon).
+*   **Dashboard**: V3 "Command Center" Live. (Pending Inbox, Apprive/Reject Flow).
 
 ## 5. Infrastructure Discovery (Dark Matter)
 *Scanned via `gcloud asset` on 2025-12-07*

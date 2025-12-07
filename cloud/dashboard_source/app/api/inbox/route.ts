@@ -32,13 +32,14 @@ export async function POST(req: Request) {
         return NextResponse.json({ error: "Invalid Action" }, { status: 400 });
 
     } catch (e: any) {
-        console.error(e);
+        console.log(`[INBOX_ERROR] POST Failed: ${e.message}`, e);
         return NextResponse.json({ error: e.message }, { status: 500 });
     }
 }
 
 export async function GET() {
     try {
+        console.log("[INBOX_DEBUG] Fetching items...");
         // Fetch Pending Items
         const snapshot = await firestore.collection('inbox')
             .where('status', '==', 'PENDING')
@@ -46,8 +47,10 @@ export async function GET() {
             .get();
 
         const items = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+        console.log(`[INBOX_DEBUG] Found ${items.length} items`);
         return NextResponse.json({ items });
     } catch (e: any) {
+        console.log(`[INBOX_ERROR] GET Failed: ${e.message}`, e);
         return NextResponse.json({ error: e.message }, { status: 500 });
     }
 }

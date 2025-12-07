@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Check, X, Clock, FileCode, Search, ShieldAlert } from "lucide-react";
+import { PayloadRenderer } from "./PayloadRenderer";
 
 interface InboxItemProps {
     id: string;
@@ -41,8 +42,8 @@ export function InboxItem({ id, type, payload, created_at, onAction }: InboxItem
                 </div>
             </div>
 
-            <div className="bg-black/50 p-3 rounded border border-slate-800/50 font-mono text-xs text-slate-400 overflow-x-auto">
-                <pre>{JSON.stringify(payload, null, 2)}</pre>
+            <div className="bg-slate-950/30 p-4 rounded border border-slate-800/50 min-h-[80px] flex items-center">
+                <PayloadRenderer type={type} payload={payload} />
             </div>
 
             <div className="flex items-center gap-2 mt-2">
