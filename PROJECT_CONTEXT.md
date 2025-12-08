@@ -32,15 +32,15 @@ To avoid future bottlenecks, **Data Gravity** must reside in the Cloud (HQ), not
 *   **Dashboard**: `cloud/dashboard_source` (Next.js on Cloud Run).
 *   **Agent**: `cloud/agents_source/morning_briefing` (Cloud Function).
 *   **Edge Daemon**: `edge/akuma_internal/ingest_daemon.py` (Python on Akuma).
-*   **Dashboard**: V3 "Command Center" Live. (Pending Inbox, Apprive/Reject Flow).
+*   **Dashboard**: V4 "Panopticon" Live. (Financial Ticker, Live Topology, Actionable Inbox).
 
 ## 5. Infrastructure Discovery (Dark Matter)
 *Scanned via `gcloud asset` on 2025-12-07*
 ### Active Neurons (Confimed Active)
-*   **Cloud Run**: `corp-dashboard`, `verify-pipeline`
-*   **Cloud Functions**: `morning-briefing` (Gen2), `orchestrator-inbox-manager` (Eventarc)
+*   **Cloud Run**: `corp-dashboard` (V6 Unified Panopticon), `verify-pipeline`
+*   **Cloud Functions**: `morning-briefing` (Gen2), `orchestrator-inbox-manager` (Eventarc), `boardroom-orchestrator` (Gen2)
 *   **Pub/Sub**: `corp-task-dispatch`, `corp-task-results`, `akuma-ingest-sub`
-*   **Firestore**: `inbox` collection (Command Center Backend)
+*   **Firestore**: `inbox` collection, `boardroom_history` collection
 *   **Secret Manager**: `akuma-hello-secret`
 
 ### Dormant/Legacy (Potential Orphans)
@@ -57,3 +57,7 @@ To avoid future bottlenecks, **Data Gravity** must reside in the Cloud (HQ), not
     *   `RESEARCH`: Installed & Provisioned (Playwright).
     *   **Phase 6 (Brain)**: **SUCCESS**. Connected to Vertex AI (Gemini 1.5 Flash).
     *   **Phase 7 (Results)**: **SUCCESS**. Telemetry loop verified (Akuma -> Pub/Sub -> Cloud).
+6.  **Phase 8: The Boardroom (Day 2)**: **ACTIVE**.
+    *   **Dashboard V6**: Deployed (13-Tab Layout).
+    *   **Executive Board**: Personas defined, Orchestrator deployed.
+    *   **Integration**: Dashboard connected to Boardroom via Proxy.

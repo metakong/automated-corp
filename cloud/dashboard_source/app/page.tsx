@@ -1,23 +1,27 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Terminal, Send, Cpu, Activity, Inbox as InboxIcon } from 'lucide-react';
+import { Inbox as InboxIcon, Users } from 'lucide-react';
 import { TelemetryBeacon } from "../components/TelemetryBeacon";
 import { KillSwitch } from "../components/KillSwitch";
-import { MissionCard } from "../components/MissionCard";
-import { InboxItem } from "../components/InboxItem";
-import { SwarmTopology } from "../components/SwarmTopology";
 import { FinancialTicker } from "../components/FinancialTicker";
+import { DashboardTabs } from "../components/DashboardTabs";
+import { ExecutiveBoardroom } from "../components/ExecutiveBoardroom";
 
 export default function Home() {
   const [loading, setLoading] = useState<string | null>(null);
   const [inboxItems, setInboxItems] = useState<any[]>([]);
+  const [isBoardroomOpen, setIsBoardroomOpen] = useState(false);
 
   // 1. Fetch Inbox (Polling for V1, Realtime Stream V2)
   const fetchInbox = async () => {
-    const res = await fetch('/api/inbox');
-    const data = await res.json();
-    if (data.items) setInboxItems(data.items);
+    try {
+      const res = await fetch('/api/inbox');
+      const data = await res.json();
+      if (data.items) setInboxItems(data.items);
+    } catch (e) {
+      console.error("Failed to fetch inbox", e);
+    }
   };
 
   useEffect(() => {
@@ -53,126 +57,52 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-slate-900 via-slate-950 to-slate-950 font-sans text-slate-200">
+    <div className="min-h-screen bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-slate-900 via-slate-950 to-slate-950 font-sans text-slate-200 flex flex-col">
 
       {/* FINANCIAL COMMAND TICKER */}
       <FinancialTicker />
 
-      <main className="p-6 md:p-12">
-        {/* Header Layer */}
-        <header className="flex flex-col md:flex-row items-start md:items-center justify-between mb-12 gap-6 border-b border-slate-800/50 pb-8">
+      {/* Header Layer */}
+      <header className="px-6 py-4 flex flex-col md:flex-row items-center justify-between gap-4 border-b border-slate-800/50 bg-slate-950/80 backdrop-blur-md sticky top-0 md:relative z-30">
+        <div className="flex items-center gap-4">
           <div>
-            <h1 className="text-3xl font-black tracking-tighter text-white mb-2">
+            <h1 className="text-2xl font-black tracking-tighter text-white flex items-center gap-2">
               AUTOMATED CORP <span className="text-emerald-500">//</span> HQ
             </h1>
-            <div className="flex items-center gap-2 text-slate-500 text-sm font-mono">
-              <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
-              SYSTEM VERSION 4.0.0 (PANOPTICON)
+            <div className="flex items-center gap-2 text-slate-500 text-[10px] font-mono uppercase tracking-widest">
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+              System Version 6.0.0 (Unified Panopticon)
             </div>
           </div>
-          <TelemetryBeacon />
-        </header>
-
-        {/* Control Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
-
-          {/* Left Col: Mission Control & Inbox */}
-          <div className="lg:col-span-3 space-y-8">
-
-            {/* North Star Metrics */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {/* ... Kept same metrics for now ... */}
-              <div className="p-4 bg-slate-900/50 border border-slate-800 rounded-lg">
-                <div className="text-slate-500 text-xs font-bold mb-1 uppercase tracking-wider">Pending Decisions</div>
-                <div className="text-2xl font-mono text-amber-500">{inboxItems.length}</div>
-              </div>
-              <div className="p-4 bg-slate-900/50 border border-slate-800 rounded-lg">
-                <div className="text-slate-500 text-xs font-bold mb-1 uppercase tracking-wider">Agents Active</div>
-                <div className="text-2xl font-mono text-emerald-400">2</div>
-              </div>
-              <div className="p-4 bg-slate-900/50 border border-slate-800 rounded-lg">
-                <div className="text-slate-500 text-xs font-bold mb-1 uppercase tracking-wider">Tasks Today</div>
-                <div className="text-2xl font-mono text-blue-400">14</div>
-              </div>
-              <div className="p-4 bg-slate-900/50 border border-slate-800 rounded-lg">
-                <div className="text-slate-500 text-xs font-bold mb-1 uppercase tracking-wider">Next Briefing</div>
-                <div className="text-2xl font-mono text-slate-400">08:00</div>
-              </div>
-            </div>
-
-            {/* THE DECISION INBOX */}
-            <div className="bg-slate-900/20 border border-slate-800 rounded-xl overflow-hidden min-h-[300px]">
-              <div className="p-6 border-b border-slate-800 bg-slate-950/50 flex items-center justify-between">
-                <h2 className="text-lg font-bold text-white flex items-center gap-2">
-                  <InboxIcon className="w-5 h-5 text-amber-500" /> DECISION INBOX
-                </h2>
-                <div className="text-xs font-mono text-slate-500">
-                  Waiting for CEO authorization...
-                </div>
-              </div>
-
-              <div className="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                {inboxItems.length === 0 ? (
-                  <div className="col-span-full flex flex-col items-center justify-center h-48 text-slate-600 gap-2">
-                    <InboxIcon className="w-8 h-8 opacity-20" />
-                    <p className="text-sm">No pending requests.</p>
-                  </div>
-                ) : (
-                  inboxItems.map(item => (
-                    <InboxItem
-                      key={item.id}
-                      {...item}
-                      payload={JSON.parse(item.payload)}
-                      onAction={handleDecision}
-                    />
-                  ))
-                )}
-              </div>
-            </div>
-
-            {/* Mission Deck (Standard Requests) */}
-            <div>
-              <h2 className="text-xl font-bold text-white mb-6 flex items-center gap-2">
-                <Activity className="w-5 h-5 text-blue-500" /> REQUEST MISSIONS
-              </h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <MissionCard
-                  title="System Diagnostics"
-                  description="Request Telemetry Update"
-                  icon={Cpu}
-                  color="text-emerald-400"
-                  onClick={() => requestTask("sys", "SYSTEM_CHECK", { msg: "Manual Override" })}
-                  loading={loading === "sys"}
-                />
-                <MissionCard
-                  title="Deep Research"
-                  description="Request Market Analysis"
-                  icon={Send}
-                  color="text-blue-400"
-                  onClick={() => requestTask("res", "RESEARCH", { query: "Manual Research Request" })}
-                  loading={loading === "res"}
-                />
-                <MissionCard
-                  title="Code Mutation"
-                  description="Request Self-Optimizaton"
-                  icon={Terminal}
-                  color="text-amber-400"
-                  onClick={() => requestTask("code", "CODE_MOD", { target: "logs/manual.log", operation: "write", content: "Manual Entry" })}
-                  loading={loading === "code"}
-                />
-              </div>
-            </div>
-
-          </div>
-
-          {/* Right Col: Safety & Governance */}
-          <div className="space-y-6">
-            <KillSwitch />
-            <SwarmTopology />
-          </div>
-
         </div>
+
+        <div className="flex items-center gap-4">
+          <button
+            onClick={() => setIsBoardroomOpen(true)}
+            className="flex items-center gap-2 px-4 py-2 bg-indigo-500/10 hover:bg-indigo-500/20 text-indigo-400 border border-indigo-500/50 rounded-lg transition-all text-xs font-bold uppercase tracking-wider"
+          >
+            <Users className="w-4 h-4" />
+            Summon Board
+          </button>
+          <div className="h-8 w-px bg-slate-800 mx-2" />
+          <TelemetryBeacon />
+          <div className="h-8 w-px bg-slate-800 mx-2" />
+          <KillSwitch />
+        </div>
+      </header>
+
+      {/* Main Content Area - Tabs */}
+      <main className="flex-1 overflow-hidden flex flex-col">
+        <DashboardTabs
+          inboxItems={inboxItems}
+          onDecision={handleDecision}
+          requestTask={requestTask}
+          loadingTask={loading}
+        />
       </main>
+
+      {/* Executive Boardroom Overlay */}
+      <ExecutiveBoardroom isOpen={isBoardroomOpen} onClose={() => setIsBoardroomOpen(false)} />
     </div>
   );
 }
