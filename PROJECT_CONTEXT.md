@@ -1,3 +1,15 @@
+> **Transparency Notice:** This documentation was authored by Claude Sonnet 4.6 (Anthropic) under direct human oversight — the same iterative, human-in-the-loop AI partnership methodology used to architect and build every system in this portfolio.
+
+> **Portfolio Context** | **Sean Deardorff** — Strategic Operations & Business Development
+>
+> This repository is an artifact of high-velocity, AI-partnered process engineering. It demonstrates how the author builds resilient, automated business machinery — translating the same decoupled logic, governance, and defensive optimization used to manage open sales territories and corporate operations into working code.
+>
+> **Career Connection:** This autonomous enterprise blueprint — with its cloud-native agents, edge data ingestion, and executive dashboard — is the programmatic expression of the same complete operational systems Sean designed at MetaKong LLC for eight independent client portfolios and at AP Wireless where he directed a global research operation. The pattern is consistent: design the full operational architecture, deploy governance at every layer, and build for autonomous execution. This project is in active development.
+>
+> [View Full Portfolio →](https://github.com/metakong/sean-deardorff)
+
+---
+
 # PROJECT CONTEXT: Automated Corp
 
 > **Living Document**: This file is the single source of truth for the project's state, architecture, and "Day 2" context. Read this first when starting a new session.
